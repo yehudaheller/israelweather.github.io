@@ -55,27 +55,31 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayWeatherData(data, city) {
         const weatherInfo = document.getElementById('weather-info');
 
-        // Display current weather information (similar to your existing code)
-        // ...
-
-        const dailyForecast = data.list;
+        // Display current weather information
+        const currentWeatherContainer = document.createElement('div');
+        currentWeatherContainer.classList.add('current-weather', 'fade-in');
+        currentWeatherContainer.innerHTML = `
+            <h2>Current Weather in ${city}</h2>
+            <p>Temperature: ${data.list[0].main.temp} &#8451;</p>
+            <p>Description: ${data.list[0].weather[0].description}</p>
+            <img src="http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png" alt="Weather Icon" class="weather-icon">
+        `;
+        weatherInfo.appendChild(currentWeatherContainer);
 
         // Create a container div for the 5-day forecast
         const weeklyForecastContainer = document.createElement('div');
         weeklyForecastContainer.classList.add('next-5-days', 'fade-in');
         weeklyForecastContainer.innerHTML = `
-            
             <div class="daily-forecast"></div>
         `;
-
-        // Append the container div to weatherInfo
         weatherInfo.appendChild(weeklyForecastContainer);
 
         // Create an object to store daily data
         const dailyData = {};
 
-        // Process each forecast entry
-        dailyForecast.forEach(entry => {
+        // Process each forecast entry starting from the second entry
+        for (let i = 2; i < data.list.length; i++) {
+            const entry = data.list[i];
             const day = formatDate(entry.dt);
 
             // Check if the day is already processed
@@ -102,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Store the processed day to avoid duplicates
                 dailyData[day] = true;
             }
-        });
+        }
     }
 
     // Function to clear existing content in the weather-info div
