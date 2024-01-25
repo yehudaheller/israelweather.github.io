@@ -72,3 +72,16 @@ p {
     margin-top: 10px; /* Add margin to create space between the icon and other elements */
 }
 
+/* Add styling for the current weather section */
+.current-weather {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add styling for the next 7 days forecast section */
+.next-7-days {
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
