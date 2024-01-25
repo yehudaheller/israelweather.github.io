@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log("Latitude:", latitude);
                     console.log("Longitude:", longitude);
 
-                    // Fetch weather data based on user's location
-                    fetchWeatherDataByCoords(latitude, longitude);
+                    // Fetch city name based on user's location
+                    fetchCityNameByCoords(latitude, longitude);
                 },
                 (error) => {
                     console.error('Error getting user location:', error);
@@ -23,6 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function fetchCityNameByCoords(latitude, longitude) {
+        // Use reverse geocoding to get city name from coordinates
+        fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
+            .then(response => response.json())
+            .then(data => {
+                const city = data.address.city || data.address.town || data.address.village || 'Unknown City';
+                // Fetch weather data based on the city name
+                fetchWeatherData(city);
+            })
+            .catch(error => {
+                console.error('Error fetching city data:', error);
+                // If there's an error with reverse geocoding, default to a specific city
+                fetchWeatherData('Jerusalem');
+            });
+    }
+
     function getWeatherByCity() {
         const cityInput = document.getElementById('cityInput').value;
         if (cityInput.trim() !== '') {
@@ -33,18 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function fetchWeatherDataByCoords(latitude, longitude) {
-        const apiKey = '2480e87306578aee0e2b4063641d2414';
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                displayWeatherData(data);
-            })
-            .catch(error => console.error('Error fetching weather data:', error));
-    }
-
     function fetchWeatherData(city) {
         const apiKey = '2480e87306578aee0e2b4063641d2414';
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -52,17 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                displayWeatherData(data);
+                displayWeatherData(data, city);
             })
             .catch(error => console.error('Error fetching weather data:', error));
     }
 
-    function displayWeatherData(data) {
+    function displayWeatherData(data, city) {
         const weatherInfo = document.getElementById('weather-info');
         const temperature = data.main.temp;
         const description = data.weather[0].description;
 
-        weatherInfo.innerHTML = `<p>Temperature: ${temperature} &#8451;</p><p>Description: ${description}</p>`;
+        // Display city name along with weather information
+        weatherInfo.innerHTML = `<p>City: ${city}</p><p>Temperature: ${temperature} &#8451;</p><p>Description: ${description}</p>`;
     }
 
     // Event listeners for buttons
