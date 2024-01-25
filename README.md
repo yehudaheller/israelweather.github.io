@@ -1,1 +1,1 @@
-Live demo on: https://yehudaheller.github.io/israelweather/
+Live view on: https://yehudaheller.github.io/israelweather/
