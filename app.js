@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Extract latitude and longitude from the position object
                 const latitude = position.coords.latitude;
                 const longitude = position.coords.longitude;
+                console.log(latitude);
 
                 // Use the latitude and longitude to fetch the city name
                 fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
