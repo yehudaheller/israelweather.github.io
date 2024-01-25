@@ -66,18 +66,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const temperature = data.main.temp;
         const description = data.weather[0].description;
         const iconCode = data.weather[0].icon; // Get the weather icon code
+        const dailyForecast = data.daily; // Assuming the API provides daily forecast data
     
         // Map the icon code to the OpenWeatherMap icon URL
         const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
     
-        // Display city name, weather information, and icon
+        // Display current weather information
         weatherInfo.innerHTML = `
-            <p class="fade-in">City: ${city}</p>
-            <p class="fade-in">Temperature: ${temperature} &#8451;</p>
-            <p class="fade-in">Description: ${description}</p>
-            <img src="${iconUrl}" alt="Weather Icon" class="fade-in weather-icon">
+            <div class="current-weather fade-in">
+                <h2>Current Weather in ${city}</h2>
+                <p>Temperature: ${temperature} &#8451;</p>
+                <p>Description: ${description}</p>
+                <img src="${iconUrl}" alt="Weather Icon" class="weather-icon">
+            </div>
+        `;
+    
+        // Display daily forecast for the next 7 days
+        weatherInfo.innerHTML += `
+            <div class="next-7-days fade-in">
+                <h2>Next 7 Days Forecast</h2>
+                <ul>
+                    ${dailyForecast.map(day => `<li>${formatDate(day.dt)} - ${day.temp.day} &#8451;, ${day.weather[0].description}</li>`).join('')}
+                </ul>
+            </div>
         `;
     }
+    
+    // Helper function to format UNIX timestamp to a readable date
+    function formatDate(timestamp) {
+        const date = new Date(timestamp * 1000);
+        return `${date.getDate()}/${date.getMonth() + 1}`;
+    }
+
 
 
     // Event listeners for buttons
