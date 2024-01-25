@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchWeatherDataByCoords(latitude, longitude) {
-        const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+        const apiKey = '2480e87306578aee0e2b4063641d2414';
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
         fetch(apiUrl)
