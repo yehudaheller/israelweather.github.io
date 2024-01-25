@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     } else {
         // If geolocation is not supported, default to a specific city
+        console.log("Geolocation is not supported");
         fetchWeatherData('Jerusalem');
     }
 
