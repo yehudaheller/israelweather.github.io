@@ -5,16 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 (position) => {
                     const latitude = position.coords.latitude;
                     const longitude = position.coords.longitude;
-
-                    console.log("Latitude:", latitude);
-                    console.log("Longitude:", longitude);
-
-                    // Fetch city name based on user's location
                     fetchCityNameByCoords(latitude, longitude);
                 },
                 (error) => {
                     console.error('Error getting user location:', error);
-                    // If there's an error with geolocation, default to a specific city
                     fetchWeatherData('Jerusalem');
                 }
             );
@@ -24,17 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchCityNameByCoords(latitude, longitude) {
-        // Use reverse geocoding to get city name from coordinates
         fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
             .then(response => response.json())
             .then(data => {
                 const city = data.address.city || data.address.town || data.address.village || 'Unknown City';
-                // Fetch weather data based on the city name
                 fetchWeatherData(city);
             })
             .catch(error => {
                 console.error('Error fetching city data:', error);
-                // If there's an error with reverse geocoding, default to a specific city
                 fetchWeatherData('Jerusalem');
             });
     }
@@ -42,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function getWeatherByCity() {
         const cityInput = document.getElementById('cityInput').value;
         if (cityInput.trim() !== '') {
-            // Fetch weather data based on user-entered city name
             fetchWeatherData(cityInput);
         } else {
             console.error('Please enter a city name.');
@@ -50,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchWeatherData(city) {
-        const apiKey = '2480e87306578aee0e2b4063641d2414';
+        const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
         fetch(apiUrl)
@@ -65,13 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const weatherInfo = document.getElementById('weather-info');
         const temperature = data.main.temp;
         const description = data.weather[0].description;
-        const iconCode = data.weather[0].icon; // Get the weather icon code
-        const dailyForecast = data.daily; // Assuming the API provides daily forecast data
-    
-        // Map the icon code to the OpenWeatherMap icon URL
+        const iconCode = data.weather[0].icon;
         const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
-    
-        // Display current weather information
+
         weatherInfo.innerHTML = `
             <div class="current-weather fade-in">
                 <h2>Current Weather in ${city}</h2>
@@ -80,25 +66,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${iconUrl}" alt="Weather Icon" class="weather-icon">
             </div>
         `;
-    
-        // Display daily forecast for the next 7 days
+
+        const dailyForecast = data.daily.slice(1, 8);
         weatherInfo.innerHTML += `
             <div class="next-7-days fade-in">
                 <h2>Next 7 Days Forecast</h2>
-                <ul>
-                    ${dailyForecast.map(day => `<li>${formatDate(day.dt)} - ${day.temp.day} &#8451;, ${day.weather[0].description}</li>`).join('')}
-                </ul>
+                <div class="daily-forecast">
+                    ${dailyForecast.map(day => `
+                        <div class="day">
+                            <p class="date">${formatDate(day.dt)}</p>
+                            <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="Weather Icon" class="weather-icon">
+                            <p class="temperature">${day.temp.day} &#8451;</p>
+                            <p class="description">${day.weather[0].description}</p>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
         `;
     }
-    
-    // Helper function to format UNIX timestamp to a readable date
+
     function formatDate(timestamp) {
         const date = new Date(timestamp * 1000);
         return `${date.getDate()}/${date.getMonth() + 1}`;
     }
-
-
 
     // Event listeners for buttons
     document.getElementById('getLocationBtn').addEventListener('click', getUserLocation);
