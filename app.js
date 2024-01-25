@@ -69,23 +69,32 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     
         const dailyForecast = data.daily.slice(1, 8);
-        // Display next 7 days forecast in a horizontal row
-        weatherInfo.innerHTML += `
-            <div class="next-7-days fade-in">
-                <h2>Next 7 Days Forecast</h2>
-                <div class="daily-forecast">
-                    ${dailyForecast.map(day => `
-                        <div class="day">
-                            <p class="date">${formatDate(day.dt)}</p>
-                            <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="Weather Icon" class="weather-icon">
-                            <p class="temperature">${day.temp.day} &#8451;</p>
-                            <p class="description">${day.weather[0].description}</p>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
+        // Create a container div for the next 7 days forecast
+        const next7DaysContainer = document.createElement('div');
+        next7DaysContainer.classList.add('next-7-days', 'fade-in');
+        next7DaysContainer.innerHTML = `
+            <h2>Next 7 Days Forecast</h2>
+            <div class="daily-forecast"></div>
         `;
+        
+        // Append the container div to weatherInfo
+        weatherInfo.appendChild(next7DaysContainer);
+    
+        // Append each day's forecast to the daily-forecast div
+        const dailyForecastContainer = next7DaysContainer.querySelector('.daily-forecast');
+        dailyForecast.forEach(day => {
+            const dayElement = document.createElement('div');
+            dayElement.classList.add('day');
+            dayElement.innerHTML = `
+                <p class="date">${formatDate(day.dt)}</p>
+                <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="Weather Icon" class="weather-icon">
+                <p class="temperature">${day.temp.day} &#8451;</p>
+                <p class="description">${day.weather[0].description}</p>
+            `;
+            dailyForecastContainer.appendChild(dayElement);
+        });
     }
+
     
     // Helper function to format UNIX timestamp to a readable date
     function formatDate(timestamp) {
