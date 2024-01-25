@@ -65,9 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const weatherInfo = document.getElementById('weather-info');
         const temperature = data.main.temp;
         const description = data.weather[0].description;
-
-        // Display city name along with weather information
-        weatherInfo.innerHTML = `<p>City: ${city}</p><p>Temperature: ${temperature} &#8451;</p><p>Description: ${description}</p>`;
+    
+        // Display city name along with weather information and apply animation class
+        weatherInfo.innerHTML = `<p class="fade-in">City: ${city}</p><p class="fade-in">Temperature: ${temperature} &#8451;</p><p class="fade-in">Description: ${description}</p>`;
     }
 
     // Event listeners for buttons
