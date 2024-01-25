@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,12 +17,23 @@
         <div class="row justify-content-center align-items-center min-vh-100">
             <div class="col-md-6">
                 <div class="weather-container text-center">
-                    <h1 class="display-4">Weather in Jerusalem</h1>
+                    <h1 class="display-4">Weather App</h1>
+
+                    <button class="btn btn-primary" onclick="getUserLocation()">Get Weather by Location</button>
+
+                    <div class="form-group">
+                        <label for="cityInput">Enter City Name:</label>
+                        <input type="text" class="form-control" id="cityInput" placeholder="City Name">
+                    </div>
+
+                    <button class="btn btn-success" onclick="getWeatherByCity()">Get Weather by City</button>
+
                     <div id="weather-info"></div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
