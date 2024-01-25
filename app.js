@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const description = data.weather[0].description;
         const iconCode = data.weather[0].icon;
         const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
-
+    
+        // Display current weather information
         weatherInfo.innerHTML = `
             <div class="current-weather fade-in">
                 <h2>Current Weather in ${city}</h2>
@@ -66,8 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${iconUrl}" alt="Weather Icon" class="weather-icon">
             </div>
         `;
-
+    
         const dailyForecast = data.daily.slice(1, 8);
+        // Display next 7 days forecast in a horizontal row
         weatherInfo.innerHTML += `
             <div class="next-7-days fade-in">
                 <h2>Next 7 Days Forecast</h2>
@@ -84,11 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
-
+    
+    // Helper function to format UNIX timestamp to a readable date
     function formatDate(timestamp) {
         const date = new Date(timestamp * 1000);
-        return `${date.getDate()}/${date.getMonth() + 1}`;
+        const options = { weekday: 'short', month: 'short', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
     }
+
 
     // Event listeners for buttons
     document.getElementById('getLocationBtn').addEventListener('click', getUserLocation);
