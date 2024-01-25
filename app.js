@@ -41,11 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function fetchWeatherData(city) {
         const apiKey = '2480e87306578aee0e2b4063641d2414';
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
+                clearWeatherInfo(); // Clear existing content
                 displayWeatherData(data, city);
             })
             .catch(error => console.error('Error fetching weather data:', error));
@@ -53,56 +54,69 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayWeatherData(data, city) {
         const weatherInfo = document.getElementById('weather-info');
-        const temperature = data.main.temp;
-        const description = data.weather[0].description;
-        const iconCode = data.weather[0].icon;
-        const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
-    
-        // Display current weather information
-        weatherInfo.innerHTML = `
-            <div class="current-weather fade-in">
-                <h2>Current Weather in ${city}</h2>
-                <p>Temperature: ${temperature} &#8451;</p>
-                <p>Description: ${description}</p>
-                <img src="${iconUrl}" alt="Weather Icon" class="weather-icon">
-            </div>
-        `;
-    
-        const dailyForecast = data.daily.slice(1, 8);
-        // Create a container div for the next 7 days forecast
-        const next7DaysContainer = document.createElement('div');
-        next7DaysContainer.classList.add('next-7-days', 'fade-in');
-        next7DaysContainer.innerHTML = `
-            <h2>Next 7 Days Forecast</h2>
+
+        // Display current weather information (similar to your existing code)
+        // ...
+
+        const dailyForecast = data.list;
+
+        // Create a container div for the 5-day forecast
+        const weeklyForecastContainer = document.createElement('div');
+        weeklyForecastContainer.classList.add('next-5-days', 'fade-in');
+        weeklyForecastContainer.innerHTML = `
+            
             <div class="daily-forecast"></div>
         `;
-        
+
         // Append the container div to weatherInfo
-        weatherInfo.appendChild(next7DaysContainer);
-    
-        // Append each day's forecast to the daily-forecast div
-        const dailyForecastContainer = next7DaysContainer.querySelector('.daily-forecast');
-        dailyForecast.forEach(day => {
-            const dayElement = document.createElement('div');
-            dayElement.classList.add('day');
-            dayElement.innerHTML = `
-                <p class="date">${formatDate(day.dt)}</p>
-                <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="Weather Icon" class="weather-icon">
-                <p class="temperature">${day.temp.day} &#8451;</p>
-                <p class="description">${day.weather[0].description}</p>
-            `;
-            dailyForecastContainer.appendChild(dayElement);
+        weatherInfo.appendChild(weeklyForecastContainer);
+
+        // Create an object to store daily data
+        const dailyData = {};
+
+        // Process each forecast entry
+        dailyForecast.forEach(entry => {
+            const day = formatDate(entry.dt);
+
+            // Check if the day is already processed
+            if (!dailyData[day]) {
+                const dayTemperature = entry.main.temp;
+                const dayWeather = {
+                    'day': day,
+                    'temperature': dayTemperature,
+                    'description': entry.weather[0].description,
+                    'icon': entry.weather[0].icon
+                };
+
+                const dayElement = document.createElement('div');
+                dayElement.classList.add('day');
+                dayElement.innerHTML = `
+                    <p class="date">${dayWeather.day}</p>
+                    <img src="http://openweathermap.org/img/wn/${dayWeather.icon}.png" alt="Weather Icon" class="weather-icon">
+                    <p class="temperature">${dayWeather.temperature} &#8451;</p>
+                    <p class="description">${dayWeather.description}</p>
+                `;
+
+                weeklyForecastContainer.querySelector('.daily-forecast').appendChild(dayElement);
+
+                // Store the processed day to avoid duplicates
+                dailyData[day] = true;
+            }
         });
     }
 
-    
+    // Function to clear existing content in the weather-info div
+    function clearWeatherInfo() {
+        const weatherInfo = document.getElementById('weather-info');
+        weatherInfo.innerHTML = '';
+    }
+
     // Helper function to format UNIX timestamp to a readable date
     function formatDate(timestamp) {
         const date = new Date(timestamp * 1000);
         const options = { weekday: 'short', month: 'short', day: 'numeric' };
         return date.toLocaleDateString('en-US', options);
     }
-
 
     // Event listeners for buttons
     document.getElementById('getLocationBtn').addEventListener('click', getUserLocation);
