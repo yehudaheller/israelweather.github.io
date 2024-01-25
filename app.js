@@ -65,10 +65,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const weatherInfo = document.getElementById('weather-info');
         const temperature = data.main.temp;
         const description = data.weather[0].description;
+        const iconCode = data.weather[0].icon; // Get the weather icon code
     
-        // Display city name along with weather information and apply animation class
-        weatherInfo.innerHTML = `<p class="fade-in">City: ${city}</p><p class="fade-in">Temperature: ${temperature} &#8451;</p><p class="fade-in">Description: ${description}</p>`;
+        // Map the icon code to the OpenWeatherMap icon URL
+        const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+    
+        // Display city name, weather information, and icon
+        weatherInfo.innerHTML = `
+            <p class="fade-in">City: ${city}</p>
+            <p class="fade-in">Temperature: ${temperature} &#8451;</p>
+            <p class="fade-in">Description: ${description}</p>
+            <img src="${iconUrl}" alt="Weather Icon" class="fade-in weather-icon">
+        `;
     }
+
 
     // Event listeners for buttons
     document.getElementById('getLocationBtn').addEventListener('click', getUserLocation);
