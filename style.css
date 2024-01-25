@@ -65,3 +65,10 @@ p {
         opacity: 1;
     }
 }
+
+/* Add styling for the weather icon */
+.weather-icon {
+    max-width: 50px; /* Adjust the maximum width of the icon as needed */
+    margin-top: 10px; /* Add margin to create space between the icon and other elements */
+}
+
