@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Weather App</title>
     <meta name="description" content="מזג אוויר בישראל, בזמן אמת.">
-    <meta name="keywords" content="weather, Jerusalem, OpenWeatherMap, API, JavaScript, HTML, CSS,מזג אוויר, מזג האוויר">
+    <meta name="keywords" content="weather, Jerusalem, OpenWeatherMap, API, JavaScript, HTML, CSS, מזג אוויר, מזג האוויר">
     <meta name="author" content="Yehuda Heller">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Weather App</h1>
+            <h1>אפליקציית מזג האוויר</h1>
         </header>
         <main>
             <div class="search-container">
-                <button id="getLocationBtn" class="btn"><i class="fas fa-map-marker-alt"></i> Use My Location</button>
+                <button id="getLocationBtn" class="btn"><i class="fas fa-map-marker-alt"></i> השתמש במיקום שלי</button>
                 <div class="input-group">
-                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <input type="text" id="cityInput" placeholder="הזן שם עיר">
                     <button id="getWeatherByCityBtn" class="btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
             <div id="weather-info" class="weather-info"></div>
         </main>
         <footer>
-            <p>&copy; 2024 Weather App by Yehuda Heller</p>
+            <p>&copy; © 2024 Weather App by Yehuda Heller </p>
         </footer>
     </div>
     <script src="app.js"></script>
