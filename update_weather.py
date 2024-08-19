@@ -4,7 +4,7 @@ import requests
 from datetime import datetime
 
 API_KEY = os.environ['OPENWEATHERMAP_API_KEY']
-CITIES = ['Tel Aviv', 'Jerusalem', 'Haifa', 'Eilat']  # רשימת ערים לעדכון
+CITIES = ['Tel Aviv', 'Jerusalem', 'Haifa', 'Eilat', 'Holon', 'beer sheva']  # רשימת ערים לעדכון
 
 def get_weather(city):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
