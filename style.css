@@ -1,30 +1,169 @@
-/* Add styling for the daily forecast section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-grow: 1;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #2193b0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+#getWeatherByCityBtn {
+    border-radius: 0 5px 5px 0;
+}
+
+.btn:hover {
+    background-color: #1c7a94;
+}
+
+.weather-info {
+    margin-top: 30px;
+}
+
+.current-weather, .next-5-days {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather h2, .next-5-days h2 {
+    margin-bottom: 15px;
+    color: #2193b0;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
 .daily-forecast {
     display: flex;
     overflow-x: auto;
-    margin-top: 10px;
+    gap: 15px;
+    padding-bottom: 10px;
 }
 
-/* Add styling for each day in the daily forecast */
 .day {
     flex: 0 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
     text-align: center;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #e0e0e0;
+    min-width: 120px;
 }
 
-/* Add styling for date in the daily forecast */
 .date {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-/* Add styling for temperature in the daily forecast */
 .temperature {
     font-size: 1.2em;
+    margin: 5px 0;
 }
 
-/* Add styling for description in the daily forecast */
 .description {
-    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    input[type="text"], .btn {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #getWeatherByCityBtn {
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
