@@ -1,3 +1,6 @@
+import os
+import json
+import requests
 from datetime import datetime
 
 API_KEY = os.environ['OPENWEATHERMAP_API_KEY']
