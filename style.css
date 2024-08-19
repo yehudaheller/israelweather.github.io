@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Body Styles */
+/* Body Styling */
 body {
     font-family: 'Assistant', sans-serif;
     background: linear-gradient(135deg, #6dd5ed, #2193b0);
@@ -17,7 +17,7 @@ body {
     direction: rtl;
 }
 
-/* Container */
+/* Container Styling */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -27,7 +27,7 @@ body {
     flex-direction: column;
 }
 
-/* Header */
+/* Header Styling */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -39,7 +39,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Main Section */
+/* Main Content Styling */
 main {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -47,7 +47,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Search Container */
+/* Search Container Styling */
 .search-container {
     display: flex;
     flex-wrap: wrap;
@@ -89,27 +89,27 @@ input[type="text"] {
     background-color: #1c7a94;
 }
 
-/* Weather Information */
+/* Weather Info Styling */
 .weather-info {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 .current-weather,
 .next-5-days {
+    width: 100%;
+    max-width: 800px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
 }
 
-.current-weather h2,
-.next-5-days h2 {
+.current-weather h2, .next-5-days h2 {
     margin-bottom: 15px;
     color: #2193b0;
 }
@@ -119,9 +119,10 @@ input[type="text"] {
     height: 50px;
 }
 
+/* Daily Forecast Styling */
 .daily-forecast {
-    display: flex;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 15px;
     padding-bottom: 10px;
     justify-content: flex-start;
@@ -152,14 +153,14 @@ input[type="text"] {
     color: #666;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     text-align: center;
     margin-top: 30px;
     color: #fff;
 }
 
-/* Responsive Adjustments */
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .search-container {
         flex-direction: column-reverse;
@@ -170,8 +171,7 @@ footer {
         flex-direction: row-reverse;
     }
 
-    input[type="text"],
-    .btn {
+    input[type="text"], .btn {
         width: 100%;
         border-radius: 5px;
     }
@@ -181,12 +181,12 @@ footer {
         margin-top: 10px;
     }
 
-    .current-weather,
-    .next-5-days {
+    .current-weather, .next-5-days {
         padding: 15px;
     }
 
     .daily-forecast {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
