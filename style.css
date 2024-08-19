@@ -5,13 +5,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Assistant', sans-serif;
     background: linear-gradient(135deg, #6dd5ed, #2193b0);
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    direction: rtl;
 }
 
 .container {
@@ -46,18 +47,20 @@ main {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    flex-direction: row-reverse;
 }
 
 .input-group {
     display: flex;
     flex-grow: 1;
+    flex-direction: row-reverse;
 }
 
 input[type="text"] {
     flex-grow: 1;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
+    border-radius: 0 5px 5px 0;
     font-size: 1rem;
 }
 
@@ -73,7 +76,7 @@ input[type="text"] {
 }
 
 #getWeatherByCityBtn {
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
 }
 
 .btn:hover {
@@ -107,6 +110,7 @@ input[type="text"] {
     overflow-x: auto;
     gap: 15px;
     padding-bottom: 10px;
+    justify-content: flex-start;
 }
 
 .day {
@@ -141,11 +145,12 @@ footer {
 
 @media (max-width: 768px) {
     .search-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .input-group {
         width: 100%;
+        flex-direction: row-reverse;
     }
 
     input[type="text"], .btn {
