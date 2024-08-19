@@ -3,33 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Weather App</title>
-    <meta name="description" content="מזג אוויר בישראל, בזמן אמת.">
-    <meta name="keywords" content="weather, Jerusalem, OpenWeatherMap, API, JavaScript, HTML, CSS, מזג אוויר, מזג האוויר">
+    <title>מזג אוויר בישראל - תחזית מדויקת ועדכנית | אפליקציית מזג האוויר</title>
+    <meta name="description"
+          content="קבל תחזית מזג אוויר מדויקת ועדכנית לכל עיר בישראל. מידע על טמפרטורות, משקעים ותנאי מזג אוויר לחמשת הימים הקרובים.">
+    <meta name="keywords" content="מזג אוויר, תחזית, ישראל, טמפרטורה, גשם, שמש, ירושלים, תל אביב, חיפה">
     <meta name="author" content="Yehuda Heller">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1> אפליקציית מזג האוויר של ישראל</h1>
-        </header>
-        <main>
-            <div class="search-container">
-                <button id="getLocationBtn" class="btn"><i class="fas fa-map-marker-alt"></i> השתמש במיקום שלי</button>
-                <div class="input-group">
-                    <input type="text" id="cityInput" placeholder="הזן שם עיר">
-                    <button id="getWeatherByCityBtn" class="btn"><i class="fas fa-search"></i></button>
-                </div>
+<div class="container">
+    <header>
+        <h1>אפליקציית מזג האוויר של ישראל</h1>
+    </header>
+    <main>
+        <p class="intro-text">
+            ברוכים הבאים לאפליקציית מזג האוויר של ישראל. כאן תוכלו למצוא תחזית מדויקת ועדכנית לכל עיר בישראל, כולל
+            טמפרטורות, משקעים ותנאי מזג אוויר לחמשת הימים הקרובים. השתמשו במיקום הנוכחי שלכם או חפשו עיר ספציפית לקבלת
+            המידע העדכני ביותר.
+        </p>
+        <section class="search-container">
+            <button id="getLocationBtn" class="btn" aria-label="השתמש במיקום שלי">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i> השתמש במיקום שלי
+            </button>
+            <div class="input-group">
+                <input type="text" id="cityInput" placeholder="הזן שם עיר" aria-label="הזן שם עיר">
+                <button id="getWeatherByCityBtn" class="btn" aria-label="חפש מזג אוויר">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
             </div>
-            <div id="weather-info" class="weather-info"></div>
-        </main>
-        <footer>
-            <p>&copy; © 2024 Weather App by Yehuda Heller </p>
-        </footer>
-    </div>
-    <script src="app.js"></script>
+        </section>
+        <section id="weather-info" class="weather-info" aria-live="polite"></section>
+        <section class="popular-cities">
+            <h2>מזג אוויר בערים מרכזיות</h2>
+            <ul>
+                <li><a href="#" onclick="weatherApp.fetchWeatherData('ירושלים'); return false;">ירושלים</a></li>
+                <li><a href="#" onclick="weatherApp.fetchWeatherData('תל אביב'); return false;">תל אביב</a></li>
+                <li><a href="#" onclick="weatherApp.fetchWeatherData('חיפה'); return false;">חיפה</a></li>
+                <li><a href="#" onclick="weatherApp.fetchWeatherData('באר שבע'); return false;">באר שבע</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 אפליקציית מזג האוויר על ידי Yehuda Heller</p>
+    </footer>
+</div>
+<script src="app.js"></script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "אפליקציית מזג האוויר של ישראל",
+        "url": "https://www.yourdomain.com",
+        "description": "תחזית מזג אוויר מדויקת ועדכנית לערי ישראל",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.yourdomain.com?city={city}",
+            "query-input": "required name=city"
+        }
+    }
+</script>
 </body>
 </html>
