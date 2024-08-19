@@ -72,11 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
     showLoading();
 
     // Mapping between Hebrew and English city names
-    const cityMapping = {
+      const cityMap = {
         'תל אביב': 'Tel Aviv',
         'ירושלים': 'Jerusalem',
         'חיפה': 'Haifa',
-        'אילת': 'Eilat'
+        'אילת': 'Eilat',
+        'חולון': 'Holon',
+        'באר שבע': 'beer sheva'
     };
 
     // Use the English name from the mapping if the input city is in Hebrew
