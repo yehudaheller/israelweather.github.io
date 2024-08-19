@@ -68,68 +68,82 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-   weatherApp.fetchWeatherData = async function(city) {
-    showLoading();
+    weatherApp.fetchWeatherData = async function(city) {
+        showLoading();
 
-    const cityMap = {
-        'תל אביב': 'Tel Aviv',
-        'ירושלים': 'Jerusalem',
-        'חיפה': 'Haifa',
-        'אילת': 'Eilat',
-        'חולון': 'Holon',
-        'באר שבע': 'beer sheva'
-    };
+        const cityMap = {
+            'תל אביב': 'Tel Aviv',
+            'ירושלים': 'Jerusalem',
+            'חיפה': 'Haifa',
+            'אילת': 'Eilat',
+            'חולון': 'Holon',
+            'באר שבע': 'beer sheva'
+        };
 
-    // Map Hebrew city name to the English name
-    const cityEnglish = cityMap[city] || city;
+        const cityEnglish = cityMap[city] || city;
 
-    try {
-        // Try to get data from the local JSON file
-        const response = await fetch('weather_data.json');
-        const data = await response.json();
-        const cityData = data.cities.find(c => c.city.toLowerCase() === cityEnglish.toLowerCase());
+        try {
+            // Try to get data from the local JSON file
+            const response = await fetch('weather_data.json');
+            const data = await response.json();
+            const cityData = data.cities.find(c => c.city.toLowerCase() === cityEnglish.toLowerCase());
 
-        if (cityData) {
+            if (cityData) {
+                clearWeatherInfo();
+                console.log(`Data for ${city} was retrieved from the local JSON file.`);
+                displayWeatherData(cityData, city);
+                return; // Stop here if data is found in the JSON file
+            }
+        } catch (error) {
+            console.error("Error fetching local data:", error);
+        }
+
+        // If not found in the local JSON, make a direct API call
+        const apiKey = '2480e87306578aee0e2b4063641d2414'
+        const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityEnglish}&appid=${apiKey}&units=metric`;
+
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) {
+                throw new Error(`City ${city} not found.`);
+            }
+            const data = await response.json();
             clearWeatherInfo();
-            console.log(`Data for ${city} was retrieved from the local JSON file.`);
-            displayWeatherData(cityData, city);
-            return; // Stop here if data is found in the JSON file
+            console.log(`Data for ${city} was retrieved from the OpenWeatherMap API.`);
+            displayWeatherData(data, city);
+        } catch (error) {
+            console.error(`Error fetching weather data: ${error.message}`);
+            displayError('לא ניתן לקבל את נתוני מזג האוויר. אנא נסה שוב.');
         }
-    } catch (error) {
-        console.error("Error fetching local data:", error);
-    }
-
-    // If not found in the local JSON, make a direct API call
-    const apiKey = '2480e87306578aee0e2b4063641d2414'
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityEnglish}&appid=${apiKey}&units=metric`;
-
-    try {
-        const response = await fetch(apiUrl);
-        if (!response.ok) {
-            throw new Error(`City ${city} not found.`);
-        }
-        const data = await response.json();
-        clearWeatherInfo();
-        console.log(`Data for ${city} was retrieved from the OpenWeatherMap API.`);
-        displayWeatherData(data, city);
-    } catch (error) {
-        console.error(`Error fetching weather data: ${error.message}`);
-        displayError('לא ניתן לקבל את נתוני מזג האוויר. אנא נסה שוב.');
-    }
-};
-
+    };
 
     function displayWeatherData(data, city) {
         const weatherInfo = document.getElementById('weather-info');
+        let temperature, description, icon;
+
+        if (data.list) {
+            // Data from API
+            temperature = data.list[0].main.temp;
+            description = data.list[0].weather[0].description;
+            icon = data.list[0].weather[0].icon;
+        } else if (data.temperature) {
+            // Data from local JSON
+            temperature = data.temperature;
+            description = data.description;
+            icon = data.icon;
+        } else {
+            console.error("Unexpected data format:", data);
+            return;
+        }
 
         // Display current weather information
         const currentWeatherContainer = document.createElement('article');
         currentWeatherContainer.classList.add('current-weather', 'fade-in');
         currentWeatherContainer.innerHTML = `
             <h2>מזג האוויר הנוכחי ב${city}</h2>
-            <p>טמפרטורה: <span itemprop="temperature">${formatTemperature(data.list[0].main.temp)}</span></p>
-            <p>תיאור: <span itemprop="description">${translateWeatherDescription(data.list[0].weather[0].description)}</span></p>
-            <img src="http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png" alt="סמל מזג אוויר" class="weather-icon">
+            <p>טמפרטורה: <span itemprop="temperature">${formatTemperature(temperature)}</span></p>
+            <p>תיאור: <span itemprop="description">${translateWeatherDescription(description)}</span></p>
+            <img src="http://openweathermap.org/img/wn/${icon}.png" alt="סמל מזג אוויר" class="weather-icon">
         `;
         weatherInfo.appendChild(currentWeatherContainer);
 
@@ -142,41 +156,37 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         weatherInfo.appendChild(weeklyForecastContainer);
 
-        // Group forecast data by day
-        const dailyForecasts = {};
-        data.list.forEach(forecast => {
-            const date = new Date(forecast.dt * 1000).toLocaleDateString('he-IL', { weekday: 'long' });
-            if (!dailyForecasts[date]) {
-                dailyForecasts[date] = forecast;
-            }
-        });
+        if (data.list) {
+            // Group forecast data by day (for API data)
+            const dailyForecasts = {};
+            data.list.forEach(forecast => {
+                const date = new Date(forecast.dt * 1000).toLocaleDateString('he-IL', { weekday: 'long' });
+                if (!dailyForecasts[date]) {
+                    dailyForecasts[date] = forecast;
+                }
+            });
 
-        // Display daily forecasts
-        const dailyForecastContainer = weeklyForecastContainer.querySelector('.daily-forecast');
-        Object.entries(dailyForecasts).forEach(([date, forecast], index) => {
-            if (index < 5) {
-                const dailyForecast = document.createElement('div');
-                dailyForecast.classList.add('daily-forecast-item');
-                dailyForecast.innerHTML = `
-                    <h3>${date}</h3>
-                    <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" alt="סמל מזג אוויר" class="weather-icon">
-                    <p>${formatTemperature(forecast.main.temp)}</p>
-                    <p>${translateWeatherDescription(forecast.weather[0].description)}</p>
-                `;
-                dailyForecastContainer.appendChild(dailyForecast);
-            }
-        });
+            // Display daily forecasts
+            const dailyForecastContainer = weeklyForecastContainer.querySelector('.daily-forecast');
+            Object.entries(dailyForecasts).forEach(([date, forecast], index) => {
+                if (index < 5) {
+                    const dailyForecast = document.createElement('div');
+                    dailyForecast.classList.add('daily-forecast-item');
+                    dailyForecast.innerHTML = `
+                        <h3>${date}</h3>
+                        <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" alt="סמל מזג אוויר" class="weather-icon">
+                        <p>${formatTemperature(forecast.main.temp)}</p>
+                        <p>${translateWeatherDescription(forecast.weather[0].description)}</p>
+                    `;
+                    dailyForecastContainer.appendChild(dailyForecast);
+                }
+            });
+        }
     }
 
     function clearWeatherInfo() {
         const weatherInfo = document.getElementById('weather-info');
         weatherInfo.innerHTML = '';
-    }
-
-    function formatDate(timestamp) {
-        const date = new Date(timestamp * 1000);
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        return date.toLocaleDateString('he-IL', options);
     }
 
     function translateWeatherDescription(description) {
