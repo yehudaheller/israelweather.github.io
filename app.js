@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearWeatherInfo();
                 console.log(`Data for ${city} was retrieved from the local JSON file.`);
                 displayWeatherData(cityData, city);
-                return; // Stop here if data is found in the JSON file
+                return;
             }
         } catch (error) {
             console.error("Error fetching local data:", error);
@@ -119,45 +119,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayWeatherData(data, city) {
         const weatherInfo = document.getElementById('weather-info');
-
-    // Display daily forecasts
-    Object.entries(dailyForecasts).forEach(([date, forecasts], index) => {
-        if (index < 5) { // Only show the first 5 days
-            const dailyForecast = document.createElement('div');
-            dailyForecast.classList.add('daily-forecast-item');
-
-            // Calculate average temperature for the day
-            const avgTemp = forecasts.reduce((sum, f) => sum + f.main.temp, 0) / forecasts.length;
-            const firstForecast = forecasts[0]; // Use the first forecast for the description and icon
-
-            dailyForecast.innerHTML = `
-                <h3>${date}</h3>
-                <img src="http://openweathermap.org/img/wn/${firstForecast.weather[0].icon}.png" alt="סמל מזג אוויר" class="weather-icon">
-                <p>${formatTemperature(avgTemp)}</p>
-                <p>${translateWeatherDescription(firstForecast.weather[0].description)}</p>
-            `;
-            dailyForecastContainer.appendChild(dailyForecast);
-        }
-    });
-}
-
-    function displayWeatherData(data, city) {
-        const weatherInfo = document.getElementById('weather-info');
-        let temperature, description, icon;
+        let currentWeather, forecast;
 
         if (data.list) {
             // Data from API
-            temperature = data.list[0].main.temp;
-            description = data.list[0].weather[0].description;
-            icon = data.list[0].weather[0].icon;
-        } else if (data.temperature) {
-            // Data from local JSON
-            temperature = data.temperature;
-            description = data.description;
-            icon = data.icon;
+            currentWeather = {
+                temperature: data.list[0].main.temp,
+                description: data.list[0].weather[0].description,
+                icon: data.list[0].weather[0].icon
+            };
+            forecast = processApiForecast(data.list);
         } else {
-            console.error("Unexpected data format:", data);
-            return;
+            // Data from local JSON
+            currentWeather = data.current;
+            forecast = data.forecast;
         }
 
         // Display current weather information
@@ -165,9 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
         currentWeatherContainer.classList.add('current-weather', 'fade-in');
         currentWeatherContainer.innerHTML = `
             <h2>מזג האוויר הנוכחי ב${city}</h2>
-            <p>טמפרטורה: <span itemprop="temperature">${formatTemperature(temperature)}</span></p>
-            <p>תיאור: <span itemprop="description">${translateWeatherDescription(description)}</span></p>
-            <img src="http://openweathermap.org/img/wn/${icon}.png" alt="סמל מזג אוויר" class="weather-icon">
+            <p>טמפרטורה: <span itemprop="temperature">${formatTemperature(currentWeather.temperature)}</span></p>
+            <p>תיאור: <span itemprop="description">${translateWeatherDescription(currentWeather.description)}</span></p>
+            <img src="http://openweathermap.org/img/wn/${currentWeather.icon}.png" alt="סמל מזג אוויר" class="weather-icon">
         `;
         weatherInfo.appendChild(currentWeatherContainer);
 
@@ -180,32 +155,39 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         weatherInfo.appendChild(weeklyForecastContainer);
 
-        if (data.list) {
-            // Group forecast data by day (for API data)
-            const dailyForecasts = {};
-            data.list.forEach(forecast => {
-                const date = new Date(forecast.dt * 1000).toLocaleDateString('he-IL', { weekday: 'long' });
-                if (!dailyForecasts[date]) {
-                    dailyForecasts[date] = forecast;
-                }
-            });
+        // Display daily forecasts
+        const dailyForecastContainer = weeklyForecastContainer.querySelector('.daily-forecast');
+        Object.entries(forecast).forEach(([date, forecastData]) => {
+            const dailyForecast = document.createElement('div');
+            dailyForecast.classList.add('daily-forecast-item');
+            dailyForecast.innerHTML = `
+                <h3>${formatDate(date)}</h3>
+                <img src="http://openweathermap.org/img/wn/${forecastData.icon}.png" alt="סמל מזג אוויר" class="weather-icon">
+                <p>${formatTemperature(forecastData.temp)}</p>
+                <p>${translateWeatherDescription(forecastData.description)}</p>
+            `;
+            dailyForecastContainer.appendChild(dailyForecast);
+        });
+    }
 
-            // Display daily forecasts
-            const dailyForecastContainer = weeklyForecastContainer.querySelector('.daily-forecast');
-            Object.entries(dailyForecasts).forEach(([date, forecast], index) => {
-                if (index < 5) {
-                    const dailyForecast = document.createElement('div');
-                    dailyForecast.classList.add('daily-forecast-item');
-                    dailyForecast.innerHTML = `
-                        <h3>${date}</h3>
-                        <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" alt="סמל מזג אוויר" class="weather-icon">
-                        <p>${formatTemperature(forecast.main.temp)}</p>
-                        <p>${translateWeatherDescription(forecast.weather[0].description)}</p>
-                    `;
-                    dailyForecastContainer.appendChild(dailyForecast);
-                }
-            });
-        }
+    function processApiForecast(list) {
+        const forecast = {};
+        list.forEach(item => {
+            const date = new Date(item.dt * 1000).toISOString().split('T')[0];
+            if (!forecast[date]) {
+                forecast[date] = {
+                    temp: item.main.temp,
+                    description: item.weather[0].description,
+                    icon: item.weather[0].icon
+                };
+            }
+        });
+        return Object.fromEntries(Object.entries(forecast).slice(0, 5));
+    }
+
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('he-IL', { weekday: 'long' });
     }
 
     function clearWeatherInfo() {
