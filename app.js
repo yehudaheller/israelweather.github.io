@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let debounceTimer;
+
+    function debounce(func, delay) {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(func, delay);
+    }
+
+    function displayError(message) {
+        const weatherInfo = document.getElementById('weather-info');
+        weatherInfo.innerHTML = `<div class="error">${message}</div>`;
+    }
+
+    function showLoading() {
+        const weatherInfo = document.getElementById('weather-info');
+        weatherInfo.innerHTML = '<div class="loading">Loading weather data...</div>';
+    }
+
+    function formatTemperature(temp) {
+        return `${Math.round(temp)}°C`;
+    }
+
     function getUserLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
@@ -9,11 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 (error) => {
                     console.error('Error getting user location:', error);
+                    displayError('Unable to retrieve location. Defaulting to Jerusalem.');
                     fetchWeatherData('Jerusalem');
                 }
             );
         } else {
             console.error('Geolocation is not supported.');
+            displayError('Geolocation is not supported by your browser.');
         }
     }
 
@@ -26,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => {
                 console.error('Error fetching city data:', error);
+                displayError('Unable to fetch city data. Defaulting to Jerusalem.');
                 fetchWeatherData('Jerusalem');
             });
     }
@@ -33,9 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function getWeatherByCity() {
         const cityInput = document.getElementById('cityInput').value;
         if (cityInput.trim() !== '') {
+            showLoading();
             fetchWeatherData(cityInput);
         } else {
             console.error('Please enter a city name.');
+            displayError('Please enter a valid city name.');
         }
     }
 
@@ -43,13 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const apiKey = '2480e87306578aee0e2b4063641d2414';
         const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
+        showLoading();
+
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                clearWeatherInfo(); // Clear existing content
+                clearWeatherInfo();
                 displayWeatherData(data, city);
             })
-            .catch(error => console.error('Error fetching weather data:', error));
+            .catch(error => {
+                console.error('Error fetching weather data:', error);
+                displayError('Failed to fetch weather data. Please try again.');
+            });
     }
 
     function displayWeatherData(data, city) {
@@ -60,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentWeatherContainer.classList.add('current-weather', 'fade-in');
         currentWeatherContainer.innerHTML = `
             <h2>Current Weather in ${city}</h2>
-            <p>Temperature: ${data.list[0].main.temp} &#8451;</p>
+            <p>Temperature: ${formatTemperature(data.list[0].main.temp)}</p>
             <p>Description: ${data.list[0].weather[0].description}</p>
             <img src="http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png" alt="Weather Icon" class="weather-icon">
         `;
@@ -84,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Check if the day is already processed
             if (!dailyData[day]) {
-                const dayTemperature = entry.main.temp;
+                const dayTemperature = formatTemperature(entry.main.temp);
                 const dayWeather = {
                     'day': day,
                     'temperature': dayTemperature,
@@ -97,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 dayElement.innerHTML = `
                     <p class="date">${dayWeather.day}</p>
                     <img src="http://openweathermap.org/img/wn/${dayWeather.icon}.png" alt="Weather Icon" class="weather-icon">
-                    <p class="temperature">${dayWeather.temperature} &#8451;</p>
+                    <p class="temperature">${dayWeather.temperature}</p>
                     <p class="description">${dayWeather.description}</p>
                 `;
 
@@ -125,4 +156,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listeners for buttons
     document.getElementById('getLocationBtn').addEventListener('click', getUserLocation);
     document.getElementById('getWeatherByCityBtn').addEventListener('click', getWeatherByCity);
+
+    document.getElementById('cityInput').addEventListener('input', (e) => {
+        debounce(() => {
+            if (e.target.value.trim() !== '') {
+                getWeatherByCity();
+            }
+        }, 500);
+    });
 });
