@@ -1,4 +1,5 @@
-* {
+/* Resetting default styles */
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -143,6 +144,7 @@ footer {
     color: #fff;
 }
 
+/* Mobile specific styles */
 @media (max-width: 768px) {
     .search-container {
         flex-direction: column-reverse;
@@ -161,6 +163,44 @@ footer {
     #getWeatherByCityBtn {
         border-radius: 5px;
         margin-top: 10px;
+    }
+
+    /* Adjusting the daily forecast layout */
+    .daily-forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .day {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Adjusting the current weather layout */
+    .current-weather {
+        text-align: center;
+    }
+
+    .current-weather .weather-icon {
+        margin-top: 10px;
+    }
+
+    /* Adjusting font sizes and padding for better readability */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .current-weather,
+    .next-5-days {
+        padding: 15px;
+    }
+
+    .day {
+        padding: 10px;
     }
 }
 
