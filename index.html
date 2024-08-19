@@ -7,34 +7,29 @@
     <meta name="description" content="מזג אוויר בישראל, בזמן אמת.">
     <meta name="keywords" content="weather, Jerusalem, OpenWeatherMap, API, JavaScript, HTML, CSS,מזג אוויר, מזג האוויר">
     <meta name="author" content="Yehuda Heller">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Your existing stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="row justify-content-center align-items-center min-vh-100">
-            <div class="col-md-6">
-                <div class="weather-container text-center">
-                    <h1 class="display-4">Weather App</h1>
-
-                    <button class="btn btn-primary" id="getLocationBtn">Get Weather by Location</button>
-
-                    <div class="form-group">
-                        <label for="cityInput">Enter City Name:</label>
-                        <input type="text" class="form-control" id="cityInput" placeholder="City Name">
-                    </div>
-
-                    <button class="btn btn-success" id="getWeatherByCityBtn">Get Weather by City</button>
-
-                    <div id="weather-info"></div>
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        <main>
+            <div class="search-container">
+                <button id="getLocationBtn" class="btn"><i class="fas fa-map-marker-alt"></i> Use My Location</button>
+                <div class="input-group">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="getWeatherByCityBtn" class="btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
-        </div>
+            <div id="weather-info" class="weather-info"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Weather App by Yehuda Heller</p>
+        </footer>
     </div>
-
-    <!-- Your existing JavaScript file -->
     <script src="app.js"></script>
 </body>
 </html>
