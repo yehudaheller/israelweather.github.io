@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cityData = data.cities.find(c => c.city.toLowerCase() === city.toLowerCase());
 
             if (cityData) {
+                console.log(`Data for ${city} was retrieved from the local JSON file.`);
                 clearWeatherInfo();
                 displayWeatherData(cityData, city);
                 return;
@@ -93,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(apiUrl);
             const data = await response.json();
+            console.log(`Data for ${city} was retrieved from the OpenWeatherMap API.`);
             clearWeatherInfo();
             displayWeatherData(data, city);
         } catch (error) {
