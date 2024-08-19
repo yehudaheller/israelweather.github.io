@@ -2,8 +2,8 @@ name: Update Weather Data
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # רץ בכל יום בחצות UTC
-  workflow_dispatch:  # מאפשר הרצה ידנית
+    - cron: '0 0 * * *'  # Runs every day at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   update-weather:
