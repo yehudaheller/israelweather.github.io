@@ -1,1 +1,4115 @@
-{"last_updated": "2024-08-19T21:39:36.205077", "cities": [{"city": "Tel Aviv", "temperature": 27.11, "description": "clear sky", "icon": "01n"}, {"city": "Jerusalem", "temperature": 24.84, "description": "clear sky", "icon": "01n"}, {"city": "Haifa", "temperature": 26.76, "description": "clear sky", "icon": "01n"}, {"city": "Eilat", "temperature": 31.91, "description": "clear sky", "icon": "01n"}]}
+{
+    "last_updated": "2024-08-19T22:24:12.526938",
+    "cities": [
+        {
+            "city": "Tel Aviv",
+            "forecast": [
+                {
+                    "dt": 1724112000,
+                    "main": {
+                        "temp": 26.88,
+                        "pressure": 1009,
+                        "humidity": 80
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 00:00:00"
+                },
+                {
+                    "dt": 1724122800,
+                    "main": {
+                        "temp": 26.37,
+                        "pressure": 1009,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 03:00:00"
+                },
+                {
+                    "dt": 1724133600,
+                    "main": {
+                        "temp": 27.77,
+                        "pressure": 1010,
+                        "humidity": 66
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 06:00:00"
+                },
+                {
+                    "dt": 1724144400,
+                    "main": {
+                        "temp": 29.99,
+                        "pressure": 1009,
+                        "humidity": 55
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 09:00:00"
+                },
+                {
+                    "dt": 1724155200,
+                    "main": {
+                        "temp": 30.13,
+                        "pressure": 1008,
+                        "humidity": 54
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 12:00:00"
+                },
+                {
+                    "dt": 1724166000,
+                    "main": {
+                        "temp": 28.92,
+                        "pressure": 1007,
+                        "humidity": 56
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 15:00:00"
+                },
+                {
+                    "dt": 1724176800,
+                    "main": {
+                        "temp": 27.45,
+                        "pressure": 1008,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 18:00:00"
+                },
+                {
+                    "dt": 1724187600,
+                    "main": {
+                        "temp": 26.46,
+                        "pressure": 1008,
+                        "humidity": 65
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 21:00:00"
+                },
+                {
+                    "dt": 1724198400,
+                    "main": {
+                        "temp": 25.68,
+                        "pressure": 1007,
+                        "humidity": 67
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 00:00:00"
+                },
+                {
+                    "dt": 1724209200,
+                    "main": {
+                        "temp": 24.99,
+                        "pressure": 1007,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 03:00:00"
+                },
+                {
+                    "dt": 1724220000,
+                    "main": {
+                        "temp": 26.79,
+                        "pressure": 1007,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 06:00:00"
+                },
+                {
+                    "dt": 1724230800,
+                    "main": {
+                        "temp": 29.78,
+                        "pressure": 1007,
+                        "humidity": 48
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 09:00:00"
+                },
+                {
+                    "dt": 1724241600,
+                    "main": {
+                        "temp": 29.99,
+                        "pressure": 1006,
+                        "humidity": 52
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 12:00:00"
+                },
+                {
+                    "dt": 1724252400,
+                    "main": {
+                        "temp": 29.2,
+                        "pressure": 1005,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 15:00:00"
+                },
+                {
+                    "dt": 1724263200,
+                    "main": {
+                        "temp": 27.87,
+                        "pressure": 1006,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 18:00:00"
+                },
+                {
+                    "dt": 1724274000,
+                    "main": {
+                        "temp": 27.37,
+                        "pressure": 1006,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 21:00:00"
+                },
+                {
+                    "dt": 1724284800,
+                    "main": {
+                        "temp": 26.89,
+                        "pressure": 1006,
+                        "humidity": 75
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 00:00:00"
+                },
+                {
+                    "dt": 1724295600,
+                    "main": {
+                        "temp": 25.97,
+                        "pressure": 1006,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 03:00:00"
+                },
+                {
+                    "dt": 1724306400,
+                    "main": {
+                        "temp": 27.6,
+                        "pressure": 1007,
+                        "humidity": 72
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 06:00:00"
+                },
+                {
+                    "dt": 1724317200,
+                    "main": {
+                        "temp": 30.47,
+                        "pressure": 1007,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 09:00:00"
+                },
+                {
+                    "dt": 1724328000,
+                    "main": {
+                        "temp": 31.1,
+                        "pressure": 1006,
+                        "humidity": 56
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 12:00:00"
+                },
+                {
+                    "dt": 1724338800,
+                    "main": {
+                        "temp": 29.63,
+                        "pressure": 1006,
+                        "humidity": 64
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 15:00:00"
+                },
+                {
+                    "dt": 1724349600,
+                    "main": {
+                        "temp": 28.25,
+                        "pressure": 1008,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 18:00:00"
+                },
+                {
+                    "dt": 1724360400,
+                    "main": {
+                        "temp": 27.45,
+                        "pressure": 1008,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 21:00:00"
+                },
+                {
+                    "dt": 1724371200,
+                    "main": {
+                        "temp": 26.67,
+                        "pressure": 1008,
+                        "humidity": 77
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 00:00:00"
+                },
+                {
+                    "dt": 1724382000,
+                    "main": {
+                        "temp": 25.97,
+                        "pressure": 1009,
+                        "humidity": 79
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 03:00:00"
+                },
+                {
+                    "dt": 1724392800,
+                    "main": {
+                        "temp": 27.64,
+                        "pressure": 1010,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 06:00:00"
+                },
+                {
+                    "dt": 1724403600,
+                    "main": {
+                        "temp": 30.02,
+                        "pressure": 1009,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 09:00:00"
+                },
+                {
+                    "dt": 1724414400,
+                    "main": {
+                        "temp": 30.17,
+                        "pressure": 1008,
+                        "humidity": 57
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 12:00:00"
+                },
+                {
+                    "dt": 1724425200,
+                    "main": {
+                        "temp": 29.05,
+                        "pressure": 1009,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 15:00:00"
+                },
+                {
+                    "dt": 1724436000,
+                    "main": {
+                        "temp": 27.57,
+                        "pressure": 1010,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 18:00:00"
+                },
+                {
+                    "dt": 1724446800,
+                    "main": {
+                        "temp": 26.82,
+                        "pressure": 1010,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 801,
+                            "main": "Clouds",
+                            "description": "few clouds",
+                            "icon": "02n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 21:00:00"
+                },
+                {
+                    "dt": 1724457600,
+                    "main": {
+                        "temp": 25.89,
+                        "pressure": 1009,
+                        "humidity": 77
+                    },
+                    "weather": [
+                        {
+                            "id": 801,
+                            "main": "Clouds",
+                            "description": "few clouds",
+                            "icon": "02n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 00:00:00"
+                },
+                {
+                    "dt": 1724468400,
+                    "main": {
+                        "temp": 25.34,
+                        "pressure": 1009,
+                        "humidity": 79
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 03:00:00"
+                },
+                {
+                    "dt": 1724479200,
+                    "main": {
+                        "temp": 27.1,
+                        "pressure": 1010,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 06:00:00"
+                },
+                {
+                    "dt": 1724490000,
+                    "main": {
+                        "temp": 29.27,
+                        "pressure": 1009,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 09:00:00"
+                },
+                {
+                    "dt": 1724500800,
+                    "main": {
+                        "temp": 29.73,
+                        "pressure": 1008,
+                        "humidity": 56
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 12:00:00"
+                },
+                {
+                    "dt": 1724511600,
+                    "main": {
+                        "temp": 28.69,
+                        "pressure": 1008,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 15:00:00"
+                },
+                {
+                    "dt": 1724522400,
+                    "main": {
+                        "temp": 27.18,
+                        "pressure": 1008,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 18:00:00"
+                },
+                {
+                    "dt": 1724533200,
+                    "main": {
+                        "temp": 26.49,
+                        "pressure": 1008,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 21:00:00"
+                }
+            ]
+        },
+        {
+            "city": "Jerusalem",
+            "forecast": [
+                {
+                    "dt": 1724112000,
+                    "main": {
+                        "temp": 23.72,
+                        "pressure": 1011,
+                        "humidity": 61
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 00:00:00"
+                },
+                {
+                    "dt": 1724122800,
+                    "main": {
+                        "temp": 22.91,
+                        "pressure": 1010,
+                        "humidity": 57
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 03:00:00"
+                },
+                {
+                    "dt": 1724133600,
+                    "main": {
+                        "temp": 25.53,
+                        "pressure": 1011,
+                        "humidity": 42
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 06:00:00"
+                },
+                {
+                    "dt": 1724144400,
+                    "main": {
+                        "temp": 30.25,
+                        "pressure": 1010,
+                        "humidity": 29
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 09:00:00"
+                },
+                {
+                    "dt": 1724155200,
+                    "main": {
+                        "temp": 32.12,
+                        "pressure": 1008,
+                        "humidity": 27
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 12:00:00"
+                },
+                {
+                    "dt": 1724166000,
+                    "main": {
+                        "temp": 27.84,
+                        "pressure": 1008,
+                        "humidity": 39
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 15:00:00"
+                },
+                {
+                    "dt": 1724176800,
+                    "main": {
+                        "temp": 24.11,
+                        "pressure": 1009,
+                        "humidity": 51
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 18:00:00"
+                },
+                {
+                    "dt": 1724187600,
+                    "main": {
+                        "temp": 22.38,
+                        "pressure": 1009,
+                        "humidity": 55
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 21:00:00"
+                },
+                {
+                    "dt": 1724198400,
+                    "main": {
+                        "temp": 20.94,
+                        "pressure": 1008,
+                        "humidity": 55
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 00:00:00"
+                },
+                {
+                    "dt": 1724209200,
+                    "main": {
+                        "temp": 19.81,
+                        "pressure": 1008,
+                        "humidity": 53
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 03:00:00"
+                },
+                {
+                    "dt": 1724220000,
+                    "main": {
+                        "temp": 24.52,
+                        "pressure": 1008,
+                        "humidity": 31
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 06:00:00"
+                },
+                {
+                    "dt": 1724230800,
+                    "main": {
+                        "temp": 30.08,
+                        "pressure": 1008,
+                        "humidity": 19
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 09:00:00"
+                },
+                {
+                    "dt": 1724241600,
+                    "main": {
+                        "temp": 32.48,
+                        "pressure": 1006,
+                        "humidity": 19
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 12:00:00"
+                },
+                {
+                    "dt": 1724252400,
+                    "main": {
+                        "temp": 28.15,
+                        "pressure": 1006,
+                        "humidity": 34
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 15:00:00"
+                },
+                {
+                    "dt": 1724263200,
+                    "main": {
+                        "temp": 24.41,
+                        "pressure": 1007,
+                        "humidity": 52
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 18:00:00"
+                },
+                {
+                    "dt": 1724274000,
+                    "main": {
+                        "temp": 23.13,
+                        "pressure": 1008,
+                        "humidity": 57
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 21:00:00"
+                },
+                {
+                    "dt": 1724284800,
+                    "main": {
+                        "temp": 22.16,
+                        "pressure": 1007,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 00:00:00"
+                },
+                {
+                    "dt": 1724295600,
+                    "main": {
+                        "temp": 21.53,
+                        "pressure": 1007,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 03:00:00"
+                },
+                {
+                    "dt": 1724306400,
+                    "main": {
+                        "temp": 25.97,
+                        "pressure": 1008,
+                        "humidity": 44
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 06:00:00"
+                },
+                {
+                    "dt": 1724317200,
+                    "main": {
+                        "temp": 31.05,
+                        "pressure": 1007,
+                        "humidity": 31
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 09:00:00"
+                },
+                {
+                    "dt": 1724328000,
+                    "main": {
+                        "temp": 33.28,
+                        "pressure": 1006,
+                        "humidity": 28
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 12:00:00"
+                },
+                {
+                    "dt": 1724338800,
+                    "main": {
+                        "temp": 28.52,
+                        "pressure": 1007,
+                        "humidity": 40
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 15:00:00"
+                },
+                {
+                    "dt": 1724349600,
+                    "main": {
+                        "temp": 24.15,
+                        "pressure": 1009,
+                        "humidity": 61
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 18:00:00"
+                },
+                {
+                    "dt": 1724360400,
+                    "main": {
+                        "temp": 22.8,
+                        "pressure": 1009,
+                        "humidity": 66
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 21:00:00"
+                },
+                {
+                    "dt": 1724371200,
+                    "main": {
+                        "temp": 22.01,
+                        "pressure": 1009,
+                        "humidity": 66
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 00:00:00"
+                },
+                {
+                    "dt": 1724382000,
+                    "main": {
+                        "temp": 21.05,
+                        "pressure": 1010,
+                        "humidity": 67
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 03:00:00"
+                },
+                {
+                    "dt": 1724392800,
+                    "main": {
+                        "temp": 25.42,
+                        "pressure": 1011,
+                        "humidity": 42
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 06:00:00"
+                },
+                {
+                    "dt": 1724403600,
+                    "main": {
+                        "temp": 30.89,
+                        "pressure": 1010,
+                        "humidity": 26
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 09:00:00"
+                },
+                {
+                    "dt": 1724414400,
+                    "main": {
+                        "temp": 33.09,
+                        "pressure": 1008,
+                        "humidity": 27
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 12:00:00"
+                },
+                {
+                    "dt": 1724425200,
+                    "main": {
+                        "temp": 28.51,
+                        "pressure": 1009,
+                        "humidity": 42
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 15:00:00"
+                },
+                {
+                    "dt": 1724436000,
+                    "main": {
+                        "temp": 24.63,
+                        "pressure": 1010,
+                        "humidity": 54
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 18:00:00"
+                },
+                {
+                    "dt": 1724446800,
+                    "main": {
+                        "temp": 23.52,
+                        "pressure": 1011,
+                        "humidity": 53
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 21:00:00"
+                },
+                {
+                    "dt": 1724457600,
+                    "main": {
+                        "temp": 22.67,
+                        "pressure": 1010,
+                        "humidity": 47
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 00:00:00"
+                },
+                {
+                    "dt": 1724468400,
+                    "main": {
+                        "temp": 21.4,
+                        "pressure": 1010,
+                        "humidity": 47
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 03:00:00"
+                },
+                {
+                    "dt": 1724479200,
+                    "main": {
+                        "temp": 25.65,
+                        "pressure": 1011,
+                        "humidity": 32
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 06:00:00"
+                },
+                {
+                    "dt": 1724490000,
+                    "main": {
+                        "temp": 30.13,
+                        "pressure": 1010,
+                        "humidity": 25
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 09:00:00"
+                },
+                {
+                    "dt": 1724500800,
+                    "main": {
+                        "temp": 32.33,
+                        "pressure": 1008,
+                        "humidity": 26
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 12:00:00"
+                },
+                {
+                    "dt": 1724511600,
+                    "main": {
+                        "temp": 28.23,
+                        "pressure": 1008,
+                        "humidity": 38
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 15:00:00"
+                },
+                {
+                    "dt": 1724522400,
+                    "main": {
+                        "temp": 23.83,
+                        "pressure": 1009,
+                        "humidity": 57
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 18:00:00"
+                },
+                {
+                    "dt": 1724533200,
+                    "main": {
+                        "temp": 22.69,
+                        "pressure": 1009,
+                        "humidity": 56
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 21:00:00"
+                }
+            ]
+        },
+        {
+            "city": "Haifa",
+            "forecast": [
+                {
+                    "dt": 1724112000,
+                    "main": {
+                        "temp": 26.51,
+                        "pressure": 1010,
+                        "humidity": 81
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 00:00:00"
+                },
+                {
+                    "dt": 1724122800,
+                    "main": {
+                        "temp": 26.19,
+                        "pressure": 1009,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 03:00:00"
+                },
+                {
+                    "dt": 1724133600,
+                    "main": {
+                        "temp": 27.55,
+                        "pressure": 1010,
+                        "humidity": 65
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 06:00:00"
+                },
+                {
+                    "dt": 1724144400,
+                    "main": {
+                        "temp": 28.48,
+                        "pressure": 1009,
+                        "humidity": 64
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 09:00:00"
+                },
+                {
+                    "dt": 1724155200,
+                    "main": {
+                        "temp": 28.68,
+                        "pressure": 1008,
+                        "humidity": 66
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 12:00:00"
+                },
+                {
+                    "dt": 1724166000,
+                    "main": {
+                        "temp": 27.57,
+                        "pressure": 1007,
+                        "humidity": 68
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 15:00:00"
+                },
+                {
+                    "dt": 1724176800,
+                    "main": {
+                        "temp": 26.75,
+                        "pressure": 1008,
+                        "humidity": 68
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 18:00:00"
+                },
+                {
+                    "dt": 1724187600,
+                    "main": {
+                        "temp": 26.25,
+                        "pressure": 1008,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 21:00:00"
+                },
+                {
+                    "dt": 1724198400,
+                    "main": {
+                        "temp": 25.63,
+                        "pressure": 1007,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 00:00:00"
+                },
+                {
+                    "dt": 1724209200,
+                    "main": {
+                        "temp": 24.8,
+                        "pressure": 1007,
+                        "humidity": 74
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 03:00:00"
+                },
+                {
+                    "dt": 1724220000,
+                    "main": {
+                        "temp": 27.08,
+                        "pressure": 1007,
+                        "humidity": 64
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 06:00:00"
+                },
+                {
+                    "dt": 1724230800,
+                    "main": {
+                        "temp": 28.71,
+                        "pressure": 1007,
+                        "humidity": 60
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 09:00:00"
+                },
+                {
+                    "dt": 1724241600,
+                    "main": {
+                        "temp": 28.72,
+                        "pressure": 1006,
+                        "humidity": 64
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 12:00:00"
+                },
+                {
+                    "dt": 1724252400,
+                    "main": {
+                        "temp": 28.13,
+                        "pressure": 1005,
+                        "humidity": 71
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 15:00:00"
+                },
+                {
+                    "dt": 1724263200,
+                    "main": {
+                        "temp": 27.52,
+                        "pressure": 1006,
+                        "humidity": 76
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 18:00:00"
+                },
+                {
+                    "dt": 1724274000,
+                    "main": {
+                        "temp": 27.38,
+                        "pressure": 1006,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 21:00:00"
+                },
+                {
+                    "dt": 1724284800,
+                    "main": {
+                        "temp": 26.99,
+                        "pressure": 1005,
+                        "humidity": 81
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 00:00:00"
+                },
+                {
+                    "dt": 1724295600,
+                    "main": {
+                        "temp": 26.2,
+                        "pressure": 1006,
+                        "humidity": 85
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 03:00:00"
+                },
+                {
+                    "dt": 1724306400,
+                    "main": {
+                        "temp": 28.33,
+                        "pressure": 1007,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 801,
+                            "main": "Clouds",
+                            "description": "few clouds",
+                            "icon": "02d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 06:00:00"
+                },
+                {
+                    "dt": 1724317200,
+                    "main": {
+                        "temp": 29.04,
+                        "pressure": 1007,
+                        "humidity": 71
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 09:00:00"
+                },
+                {
+                    "dt": 1724328000,
+                    "main": {
+                        "temp": 29.28,
+                        "pressure": 1006,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 12:00:00"
+                },
+                {
+                    "dt": 1724338800,
+                    "main": {
+                        "temp": 28.55,
+                        "pressure": 1007,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 15:00:00"
+                },
+                {
+                    "dt": 1724349600,
+                    "main": {
+                        "temp": 27.93,
+                        "pressure": 1008,
+                        "humidity": 75
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 18:00:00"
+                },
+                {
+                    "dt": 1724360400,
+                    "main": {
+                        "temp": 27.39,
+                        "pressure": 1008,
+                        "humidity": 76
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 21:00:00"
+                },
+                {
+                    "dt": 1724371200,
+                    "main": {
+                        "temp": 26.75,
+                        "pressure": 1008,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 00:00:00"
+                },
+                {
+                    "dt": 1724382000,
+                    "main": {
+                        "temp": 26.24,
+                        "pressure": 1008,
+                        "humidity": 79
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 03:00:00"
+                },
+                {
+                    "dt": 1724392800,
+                    "main": {
+                        "temp": 27.75,
+                        "pressure": 1010,
+                        "humidity": 71
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 06:00:00"
+                },
+                {
+                    "dt": 1724403600,
+                    "main": {
+                        "temp": 28.15,
+                        "pressure": 1010,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 09:00:00"
+                },
+                {
+                    "dt": 1724414400,
+                    "main": {
+                        "temp": 28.4,
+                        "pressure": 1009,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 12:00:00"
+                },
+                {
+                    "dt": 1724425200,
+                    "main": {
+                        "temp": 27.63,
+                        "pressure": 1009,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 15:00:00"
+                },
+                {
+                    "dt": 1724436000,
+                    "main": {
+                        "temp": 27.28,
+                        "pressure": 1010,
+                        "humidity": 75
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 18:00:00"
+                },
+                {
+                    "dt": 1724446800,
+                    "main": {
+                        "temp": 26.73,
+                        "pressure": 1010,
+                        "humidity": 77
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 21:00:00"
+                },
+                {
+                    "dt": 1724457600,
+                    "main": {
+                        "temp": 26.13,
+                        "pressure": 1009,
+                        "humidity": 79
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 00:00:00"
+                },
+                {
+                    "dt": 1724468400,
+                    "main": {
+                        "temp": 25.83,
+                        "pressure": 1009,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 03:00:00"
+                },
+                {
+                    "dt": 1724479200,
+                    "main": {
+                        "temp": 27.15,
+                        "pressure": 1010,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 801,
+                            "main": "Clouds",
+                            "description": "few clouds",
+                            "icon": "02d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 06:00:00"
+                },
+                {
+                    "dt": 1724490000,
+                    "main": {
+                        "temp": 27.54,
+                        "pressure": 1010,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 09:00:00"
+                },
+                {
+                    "dt": 1724500800,
+                    "main": {
+                        "temp": 27.69,
+                        "pressure": 1008,
+                        "humidity": 71
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 12:00:00"
+                },
+                {
+                    "dt": 1724511600,
+                    "main": {
+                        "temp": 27.42,
+                        "pressure": 1008,
+                        "humidity": 72
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 15:00:00"
+                },
+                {
+                    "dt": 1724522400,
+                    "main": {
+                        "temp": 27.03,
+                        "pressure": 1008,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 18:00:00"
+                },
+                {
+                    "dt": 1724533200,
+                    "main": {
+                        "temp": 26.47,
+                        "pressure": 1008,
+                        "humidity": 75
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 21:00:00"
+                }
+            ]
+        },
+        {
+            "city": "Eilat",
+            "forecast": [
+                {
+                    "dt": 1724112000,
+                    "main": {
+                        "temp": 30.82,
+                        "pressure": 1008,
+                        "humidity": 40
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 00:00:00"
+                },
+                {
+                    "dt": 1724122800,
+                    "main": {
+                        "temp": 29.84,
+                        "pressure": 1009,
+                        "humidity": 46
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 03:00:00"
+                },
+                {
+                    "dt": 1724133600,
+                    "main": {
+                        "temp": 31.77,
+                        "pressure": 1009,
+                        "humidity": 42
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 06:00:00"
+                },
+                {
+                    "dt": 1724144400,
+                    "main": {
+                        "temp": 36.2,
+                        "pressure": 1008,
+                        "humidity": 28
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 09:00:00"
+                },
+                {
+                    "dt": 1724155200,
+                    "main": {
+                        "temp": 39.58,
+                        "pressure": 1005,
+                        "humidity": 18
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 12:00:00"
+                },
+                {
+                    "dt": 1724166000,
+                    "main": {
+                        "temp": 38.74,
+                        "pressure": 1004,
+                        "humidity": 16
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 15:00:00"
+                },
+                {
+                    "dt": 1724176800,
+                    "main": {
+                        "temp": 34.1,
+                        "pressure": 1006,
+                        "humidity": 31
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 18:00:00"
+                },
+                {
+                    "dt": 1724187600,
+                    "main": {
+                        "temp": 30.76,
+                        "pressure": 1007,
+                        "humidity": 44
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 21:00:00"
+                },
+                {
+                    "dt": 1724198400,
+                    "main": {
+                        "temp": 28.9,
+                        "pressure": 1007,
+                        "humidity": 46
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 00:00:00"
+                },
+                {
+                    "dt": 1724209200,
+                    "main": {
+                        "temp": 27.1,
+                        "pressure": 1007,
+                        "humidity": 47
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 03:00:00"
+                },
+                {
+                    "dt": 1724220000,
+                    "main": {
+                        "temp": 29.9,
+                        "pressure": 1007,
+                        "humidity": 38
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 06:00:00"
+                },
+                {
+                    "dt": 1724230800,
+                    "main": {
+                        "temp": 34.81,
+                        "pressure": 1005,
+                        "humidity": 27
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 09:00:00"
+                },
+                {
+                    "dt": 1724241600,
+                    "main": {
+                        "temp": 38.66,
+                        "pressure": 1003,
+                        "humidity": 20
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 12:00:00"
+                },
+                {
+                    "dt": 1724252400,
+                    "main": {
+                        "temp": 38.02,
+                        "pressure": 1003,
+                        "humidity": 15
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 15:00:00"
+                },
+                {
+                    "dt": 1724263200,
+                    "main": {
+                        "temp": 33.32,
+                        "pressure": 1005,
+                        "humidity": 25
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 18:00:00"
+                },
+                {
+                    "dt": 1724274000,
+                    "main": {
+                        "temp": 30.13,
+                        "pressure": 1006,
+                        "humidity": 37
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 21:00:00"
+                },
+                {
+                    "dt": 1724284800,
+                    "main": {
+                        "temp": 28.34,
+                        "pressure": 1006,
+                        "humidity": 45
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 00:00:00"
+                },
+                {
+                    "dt": 1724295600,
+                    "main": {
+                        "temp": 27.33,
+                        "pressure": 1006,
+                        "humidity": 47
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 03:00:00"
+                },
+                {
+                    "dt": 1724306400,
+                    "main": {
+                        "temp": 30.87,
+                        "pressure": 1006,
+                        "humidity": 36
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 06:00:00"
+                },
+                {
+                    "dt": 1724317200,
+                    "main": {
+                        "temp": 36.15,
+                        "pressure": 1005,
+                        "humidity": 25
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 09:00:00"
+                },
+                {
+                    "dt": 1724328000,
+                    "main": {
+                        "temp": 39.37,
+                        "pressure": 1003,
+                        "humidity": 20
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 12:00:00"
+                },
+                {
+                    "dt": 1724338800,
+                    "main": {
+                        "temp": 38.68,
+                        "pressure": 1003,
+                        "humidity": 20
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 15:00:00"
+                },
+                {
+                    "dt": 1724349600,
+                    "main": {
+                        "temp": 33.83,
+                        "pressure": 1006,
+                        "humidity": 36
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 18:00:00"
+                },
+                {
+                    "dt": 1724360400,
+                    "main": {
+                        "temp": 30.59,
+                        "pressure": 1007,
+                        "humidity": 48
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 21:00:00"
+                },
+                {
+                    "dt": 1724371200,
+                    "main": {
+                        "temp": 29.06,
+                        "pressure": 1007,
+                        "humidity": 53
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 00:00:00"
+                },
+                {
+                    "dt": 1724382000,
+                    "main": {
+                        "temp": 27.79,
+                        "pressure": 1009,
+                        "humidity": 58
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 03:00:00"
+                },
+                {
+                    "dt": 1724392800,
+                    "main": {
+                        "temp": 30.31,
+                        "pressure": 1010,
+                        "humidity": 48
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 06:00:00"
+                },
+                {
+                    "dt": 1724403600,
+                    "main": {
+                        "temp": 35.4,
+                        "pressure": 1008,
+                        "humidity": 27
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 09:00:00"
+                },
+                {
+                    "dt": 1724414400,
+                    "main": {
+                        "temp": 39.06,
+                        "pressure": 1006,
+                        "humidity": 21
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 12:00:00"
+                },
+                {
+                    "dt": 1724425200,
+                    "main": {
+                        "temp": 39.08,
+                        "pressure": 1006,
+                        "humidity": 19
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 15:00:00"
+                },
+                {
+                    "dt": 1724436000,
+                    "main": {
+                        "temp": 35.47,
+                        "pressure": 1007,
+                        "humidity": 25
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 18:00:00"
+                },
+                {
+                    "dt": 1724446800,
+                    "main": {
+                        "temp": 31.47,
+                        "pressure": 1008,
+                        "humidity": 44
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 21:00:00"
+                },
+                {
+                    "dt": 1724457600,
+                    "main": {
+                        "temp": 30.1,
+                        "pressure": 1008,
+                        "humidity": 45
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 00:00:00"
+                },
+                {
+                    "dt": 1724468400,
+                    "main": {
+                        "temp": 28.4,
+                        "pressure": 1009,
+                        "humidity": 47
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 03:00:00"
+                },
+                {
+                    "dt": 1724479200,
+                    "main": {
+                        "temp": 31.65,
+                        "pressure": 1009,
+                        "humidity": 37
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 06:00:00"
+                },
+                {
+                    "dt": 1724490000,
+                    "main": {
+                        "temp": 36.4,
+                        "pressure": 1007,
+                        "humidity": 27
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 09:00:00"
+                },
+                {
+                    "dt": 1724500800,
+                    "main": {
+                        "temp": 39.45,
+                        "pressure": 1005,
+                        "humidity": 21
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 12:00:00"
+                },
+                {
+                    "dt": 1724511600,
+                    "main": {
+                        "temp": 38.82,
+                        "pressure": 1004,
+                        "humidity": 21
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 15:00:00"
+                },
+                {
+                    "dt": 1724522400,
+                    "main": {
+                        "temp": 34.55,
+                        "pressure": 1005,
+                        "humidity": 31
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 18:00:00"
+                },
+                {
+                    "dt": 1724533200,
+                    "main": {
+                        "temp": 30.69,
+                        "pressure": 1007,
+                        "humidity": 44
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 21:00:00"
+                }
+            ]
+        },
+        {
+            "city": "Holon",
+            "forecast": [
+                {
+                    "dt": 1724112000,
+                    "main": {
+                        "temp": 26.57,
+                        "pressure": 1009,
+                        "humidity": 81
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 00:00:00"
+                },
+                {
+                    "dt": 1724122800,
+                    "main": {
+                        "temp": 26.19,
+                        "pressure": 1009,
+                        "humidity": 79
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 03:00:00"
+                },
+                {
+                    "dt": 1724133600,
+                    "main": {
+                        "temp": 27.73,
+                        "pressure": 1010,
+                        "humidity": 65
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 06:00:00"
+                },
+                {
+                    "dt": 1724144400,
+                    "main": {
+                        "temp": 29.9,
+                        "pressure": 1009,
+                        "humidity": 55
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 09:00:00"
+                },
+                {
+                    "dt": 1724155200,
+                    "main": {
+                        "temp": 30.02,
+                        "pressure": 1008,
+                        "humidity": 54
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 12:00:00"
+                },
+                {
+                    "dt": 1724166000,
+                    "main": {
+                        "temp": 28.78,
+                        "pressure": 1007,
+                        "humidity": 56
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 15:00:00"
+                },
+                {
+                    "dt": 1724176800,
+                    "main": {
+                        "temp": 27.31,
+                        "pressure": 1008,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 18:00:00"
+                },
+                {
+                    "dt": 1724187600,
+                    "main": {
+                        "temp": 26.32,
+                        "pressure": 1008,
+                        "humidity": 65
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 21:00:00"
+                },
+                {
+                    "dt": 1724198400,
+                    "main": {
+                        "temp": 25.57,
+                        "pressure": 1007,
+                        "humidity": 67
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 00:00:00"
+                },
+                {
+                    "dt": 1724209200,
+                    "main": {
+                        "temp": 24.82,
+                        "pressure": 1007,
+                        "humidity": 70
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 03:00:00"
+                },
+                {
+                    "dt": 1724220000,
+                    "main": {
+                        "temp": 26.62,
+                        "pressure": 1007,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 06:00:00"
+                },
+                {
+                    "dt": 1724230800,
+                    "main": {
+                        "temp": 29.75,
+                        "pressure": 1007,
+                        "humidity": 48
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 09:00:00"
+                },
+                {
+                    "dt": 1724241600,
+                    "main": {
+                        "temp": 29.89,
+                        "pressure": 1006,
+                        "humidity": 52
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 12:00:00"
+                },
+                {
+                    "dt": 1724252400,
+                    "main": {
+                        "temp": 29.06,
+                        "pressure": 1005,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 15:00:00"
+                },
+                {
+                    "dt": 1724263200,
+                    "main": {
+                        "temp": 27.7,
+                        "pressure": 1006,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 18:00:00"
+                },
+                {
+                    "dt": 1724274000,
+                    "main": {
+                        "temp": 27.19,
+                        "pressure": 1006,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 21:00:00"
+                },
+                {
+                    "dt": 1724284800,
+                    "main": {
+                        "temp": 26.68,
+                        "pressure": 1006,
+                        "humidity": 75
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 00:00:00"
+                },
+                {
+                    "dt": 1724295600,
+                    "main": {
+                        "temp": 25.65,
+                        "pressure": 1006,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 03:00:00"
+                },
+                {
+                    "dt": 1724306400,
+                    "main": {
+                        "temp": 27.38,
+                        "pressure": 1007,
+                        "humidity": 72
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 06:00:00"
+                },
+                {
+                    "dt": 1724317200,
+                    "main": {
+                        "temp": 30.37,
+                        "pressure": 1007,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 09:00:00"
+                },
+                {
+                    "dt": 1724328000,
+                    "main": {
+                        "temp": 30.94,
+                        "pressure": 1006,
+                        "humidity": 56
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 12:00:00"
+                },
+                {
+                    "dt": 1724338800,
+                    "main": {
+                        "temp": 29.55,
+                        "pressure": 1006,
+                        "humidity": 64
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 15:00:00"
+                },
+                {
+                    "dt": 1724349600,
+                    "main": {
+                        "temp": 28.2,
+                        "pressure": 1008,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 18:00:00"
+                },
+                {
+                    "dt": 1724360400,
+                    "main": {
+                        "temp": 27.41,
+                        "pressure": 1008,
+                        "humidity": 73
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 21:00:00"
+                },
+                {
+                    "dt": 1724371200,
+                    "main": {
+                        "temp": 26.61,
+                        "pressure": 1008,
+                        "humidity": 76
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 00:00:00"
+                },
+                {
+                    "dt": 1724382000,
+                    "main": {
+                        "temp": 25.86,
+                        "pressure": 1009,
+                        "humidity": 79
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 03:00:00"
+                },
+                {
+                    "dt": 1724392800,
+                    "main": {
+                        "temp": 27.6,
+                        "pressure": 1010,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 06:00:00"
+                },
+                {
+                    "dt": 1724403600,
+                    "main": {
+                        "temp": 29.97,
+                        "pressure": 1009,
+                        "humidity": 58
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 09:00:00"
+                },
+                {
+                    "dt": 1724414400,
+                    "main": {
+                        "temp": 30.1,
+                        "pressure": 1008,
+                        "humidity": 56
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 12:00:00"
+                },
+                {
+                    "dt": 1724425200,
+                    "main": {
+                        "temp": 28.89,
+                        "pressure": 1009,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 15:00:00"
+                },
+                {
+                    "dt": 1724436000,
+                    "main": {
+                        "temp": 27.51,
+                        "pressure": 1010,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 18:00:00"
+                },
+                {
+                    "dt": 1724446800,
+                    "main": {
+                        "temp": 26.81,
+                        "pressure": 1010,
+                        "humidity": 72
+                    },
+                    "weather": [
+                        {
+                            "id": 801,
+                            "main": "Clouds",
+                            "description": "few clouds",
+                            "icon": "02n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 21:00:00"
+                },
+                {
+                    "dt": 1724457600,
+                    "main": {
+                        "temp": 25.84,
+                        "pressure": 1009,
+                        "humidity": 75
+                    },
+                    "weather": [
+                        {
+                            "id": 801,
+                            "main": "Clouds",
+                            "description": "few clouds",
+                            "icon": "02n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 00:00:00"
+                },
+                {
+                    "dt": 1724468400,
+                    "main": {
+                        "temp": 25.27,
+                        "pressure": 1009,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 03:00:00"
+                },
+                {
+                    "dt": 1724479200,
+                    "main": {
+                        "temp": 27.12,
+                        "pressure": 1010,
+                        "humidity": 68
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 06:00:00"
+                },
+                {
+                    "dt": 1724490000,
+                    "main": {
+                        "temp": 29.16,
+                        "pressure": 1009,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 09:00:00"
+                },
+                {
+                    "dt": 1724500800,
+                    "main": {
+                        "temp": 29.6,
+                        "pressure": 1008,
+                        "humidity": 55
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 12:00:00"
+                },
+                {
+                    "dt": 1724511600,
+                    "main": {
+                        "temp": 28.61,
+                        "pressure": 1008,
+                        "humidity": 61
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 15:00:00"
+                },
+                {
+                    "dt": 1724522400,
+                    "main": {
+                        "temp": 27.17,
+                        "pressure": 1008,
+                        "humidity": 68
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 18:00:00"
+                },
+                {
+                    "dt": 1724533200,
+                    "main": {
+                        "temp": 26.46,
+                        "pressure": 1008,
+                        "humidity": 72
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 21:00:00"
+                }
+            ]
+        },
+        {
+            "city": "beer sheva",
+            "forecast": [
+                {
+                    "dt": 1724112000,
+                    "main": {
+                        "temp": 26.11,
+                        "pressure": 1010,
+                        "humidity": 68
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 00:00:00"
+                },
+                {
+                    "dt": 1724122800,
+                    "main": {
+                        "temp": 24.56,
+                        "pressure": 1010,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 03:00:00"
+                },
+                {
+                    "dt": 1724133600,
+                    "main": {
+                        "temp": 26.33,
+                        "pressure": 1011,
+                        "humidity": 66
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 06:00:00"
+                },
+                {
+                    "dt": 1724144400,
+                    "main": {
+                        "temp": 31.67,
+                        "pressure": 1009,
+                        "humidity": 40
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 09:00:00"
+                },
+                {
+                    "dt": 1724155200,
+                    "main": {
+                        "temp": 34.43,
+                        "pressure": 1007,
+                        "humidity": 32
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 12:00:00"
+                },
+                {
+                    "dt": 1724166000,
+                    "main": {
+                        "temp": 30.42,
+                        "pressure": 1007,
+                        "humidity": 38
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 15:00:00"
+                },
+                {
+                    "dt": 1724176800,
+                    "main": {
+                        "temp": 26.05,
+                        "pressure": 1009,
+                        "humidity": 59
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 18:00:00"
+                },
+                {
+                    "dt": 1724187600,
+                    "main": {
+                        "temp": 24.15,
+                        "pressure": 1009,
+                        "humidity": 72
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-20 21:00:00"
+                },
+                {
+                    "dt": 1724198400,
+                    "main": {
+                        "temp": 22.81,
+                        "pressure": 1008,
+                        "humidity": 79
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 00:00:00"
+                },
+                {
+                    "dt": 1724209200,
+                    "main": {
+                        "temp": 21.57,
+                        "pressure": 1008,
+                        "humidity": 85
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 03:00:00"
+                },
+                {
+                    "dt": 1724220000,
+                    "main": {
+                        "temp": 24.81,
+                        "pressure": 1008,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 06:00:00"
+                },
+                {
+                    "dt": 1724230800,
+                    "main": {
+                        "temp": 31.43,
+                        "pressure": 1007,
+                        "humidity": 27
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 09:00:00"
+                },
+                {
+                    "dt": 1724241600,
+                    "main": {
+                        "temp": 34.15,
+                        "pressure": 1005,
+                        "humidity": 24
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 12:00:00"
+                },
+                {
+                    "dt": 1724252400,
+                    "main": {
+                        "temp": 30.52,
+                        "pressure": 1006,
+                        "humidity": 36
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 15:00:00"
+                },
+                {
+                    "dt": 1724263200,
+                    "main": {
+                        "temp": 26.3,
+                        "pressure": 1007,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 18:00:00"
+                },
+                {
+                    "dt": 1724274000,
+                    "main": {
+                        "temp": 24.7,
+                        "pressure": 1007,
+                        "humidity": 74
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-21 21:00:00"
+                },
+                {
+                    "dt": 1724284800,
+                    "main": {
+                        "temp": 23.69,
+                        "pressure": 1007,
+                        "humidity": 81
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 00:00:00"
+                },
+                {
+                    "dt": 1724295600,
+                    "main": {
+                        "temp": 22.87,
+                        "pressure": 1007,
+                        "humidity": 85
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 03:00:00"
+                },
+                {
+                    "dt": 1724306400,
+                    "main": {
+                        "temp": 26.85,
+                        "pressure": 1007,
+                        "humidity": 62
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 06:00:00"
+                },
+                {
+                    "dt": 1724317200,
+                    "main": {
+                        "temp": 33.34,
+                        "pressure": 1007,
+                        "humidity": 35
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 09:00:00"
+                },
+                {
+                    "dt": 1724328000,
+                    "main": {
+                        "temp": 34.72,
+                        "pressure": 1006,
+                        "humidity": 32
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 12:00:00"
+                },
+                {
+                    "dt": 1724338800,
+                    "main": {
+                        "temp": 31.32,
+                        "pressure": 1006,
+                        "humidity": 41
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 15:00:00"
+                },
+                {
+                    "dt": 1724349600,
+                    "main": {
+                        "temp": 26.51,
+                        "pressure": 1008,
+                        "humidity": 71
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 18:00:00"
+                },
+                {
+                    "dt": 1724360400,
+                    "main": {
+                        "temp": 25.16,
+                        "pressure": 1009,
+                        "humidity": 78
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-22 21:00:00"
+                },
+                {
+                    "dt": 1724371200,
+                    "main": {
+                        "temp": 23.93,
+                        "pressure": 1008,
+                        "humidity": 84
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 00:00:00"
+                },
+                {
+                    "dt": 1724382000,
+                    "main": {
+                        "temp": 22.86,
+                        "pressure": 1009,
+                        "humidity": 89
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 03:00:00"
+                },
+                {
+                    "dt": 1724392800,
+                    "main": {
+                        "temp": 26.2,
+                        "pressure": 1010,
+                        "humidity": 66
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 06:00:00"
+                },
+                {
+                    "dt": 1724403600,
+                    "main": {
+                        "temp": 32.39,
+                        "pressure": 1009,
+                        "humidity": 34
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 09:00:00"
+                },
+                {
+                    "dt": 1724414400,
+                    "main": {
+                        "temp": 35.23,
+                        "pressure": 1008,
+                        "humidity": 30
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 12:00:00"
+                },
+                {
+                    "dt": 1724425200,
+                    "main": {
+                        "temp": 31.01,
+                        "pressure": 1009,
+                        "humidity": 41
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 15:00:00"
+                },
+                {
+                    "dt": 1724436000,
+                    "main": {
+                        "temp": 26.38,
+                        "pressure": 1010,
+                        "humidity": 64
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 18:00:00"
+                },
+                {
+                    "dt": 1724446800,
+                    "main": {
+                        "temp": 25.28,
+                        "pressure": 1010,
+                        "humidity": 69
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-23 21:00:00"
+                },
+                {
+                    "dt": 1724457600,
+                    "main": {
+                        "temp": 23.97,
+                        "pressure": 1010,
+                        "humidity": 76
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 00:00:00"
+                },
+                {
+                    "dt": 1724468400,
+                    "main": {
+                        "temp": 22.85,
+                        "pressure": 1010,
+                        "humidity": 83
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 03:00:00"
+                },
+                {
+                    "dt": 1724479200,
+                    "main": {
+                        "temp": 26.15,
+                        "pressure": 1010,
+                        "humidity": 61
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 06:00:00"
+                },
+                {
+                    "dt": 1724490000,
+                    "main": {
+                        "temp": 31.72,
+                        "pressure": 1009,
+                        "humidity": 35
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 09:00:00"
+                },
+                {
+                    "dt": 1724500800,
+                    "main": {
+                        "temp": 34.25,
+                        "pressure": 1007,
+                        "humidity": 32
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 12:00:00"
+                },
+                {
+                    "dt": 1724511600,
+                    "main": {
+                        "temp": 30.44,
+                        "pressure": 1008,
+                        "humidity": 40
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 15:00:00"
+                },
+                {
+                    "dt": 1724522400,
+                    "main": {
+                        "temp": 25.4,
+                        "pressure": 1009,
+                        "humidity": 68
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 18:00:00"
+                },
+                {
+                    "dt": 1724533200,
+                    "main": {
+                        "temp": 24.11,
+                        "pressure": 1008,
+                        "humidity": 77
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01n"
+                        }
+                    ],
+                    "dt_txt": "2024-08-24 21:00:00"
+                }
+            ]
+        }
+    ]
+}
