@@ -71,8 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
    weatherApp.fetchWeatherData = async function(city) {
     showLoading();
 
-    // Mapping between Hebrew and English city names
-      const cityMap = {
+    const cityMap = {
         'תל אביב': 'Tel Aviv',
         'ירושלים': 'Jerusalem',
         'חיפה': 'Haifa',
@@ -81,37 +80,40 @@ document.addEventListener('DOMContentLoaded', () => {
         'באר שבע': 'beer sheva'
     };
 
-    // Use the English name from the mapping if the input city is in Hebrew
-    const normalizedCity = cityMapping[city] || city;
+    // Map Hebrew city name to the English name
+    const cityEnglish = cityMap[city] || city;
 
     try {
-        // Attempt to get data from the local JSON file
+        // Try to get data from the local JSON file
         const response = await fetch('weather_data.json');
         const data = await response.json();
-        const cityData = data.cities.find(c => c.city.toLowerCase() === normalizedCity.toLowerCase());
+        const cityData = data.cities.find(c => c.city.toLowerCase() === cityEnglish.toLowerCase());
 
         if (cityData) {
-            console.log(`Data for ${normalizedCity} was retrieved from the local JSON file.`);
             clearWeatherInfo();
-            displayWeatherData(cityData, city);  // Pass the original city name for display
-            return;
+            console.log(`Data for ${city} was retrieved from the local JSON file.`);
+            displayWeatherData(cityData, city);
+            return; // Stop here if data is found in the JSON file
         }
     } catch (error) {
         console.error("Error fetching local data:", error);
     }
 
-    // If not found in the local JSON, perform a direct API call
-    const apiKey = '2480e87306578aee0e2b4063641d2414';
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${normalizedCity}&appid=${apiKey}&units=metric`;
+    // If not found in the local JSON, make a direct API call
+    const apiKey = '2480e87306578aee0e2b4063641d2414'
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityEnglish}&appid=${apiKey}&units=metric`;
 
     try {
         const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error(`City ${city} not found.`);
+        }
         const data = await response.json();
-        console.log(`Data for ${normalizedCity} was retrieved from the OpenWeatherMap API.`);
         clearWeatherInfo();
-        displayWeatherData(data, city);  // Pass the original city name for display
+        console.log(`Data for ${city} was retrieved from the OpenWeatherMap API.`);
+        displayWeatherData(data, city);
     } catch (error) {
-        console.error('Error fetching weather data:', error);
+        console.error(`Error fetching weather data: ${error.message}`);
         displayError('לא ניתן לקבל את נתוני מזג האוויר. אנא נסה שוב.');
     }
 };
