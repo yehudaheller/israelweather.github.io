@@ -263,6 +263,7 @@ body.dark-mode {
 
 body.dark-mode main {
     background-color: rgba(0, 0, 0, 0.7);
+    color: #f0f0f0; /* Add this line to ensure all text in main is light colored */
 }
 
 body.dark-mode .current-weather,
@@ -314,4 +315,7 @@ body.dark-mode .popular-cities a:hover {
 
 body.dark-mode .dark-mode-toggle {
     color: #f0f0f0;
+}
+body.dark-mode .intro-text {
+    color: #f0f0f0; /* or any light color that fits your design */
 }
