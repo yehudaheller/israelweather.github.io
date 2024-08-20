@@ -1,16 +1,17 @@
 {
-  "last_updated": "2024-08-20T11:34:22.676231",
+  "last_updated": "2024-08-20T11:43:06.928775",
   "cities": [
     {
       "city": "Tel Aviv",
+      "city_hebrew": "תל אביב",
       "current": {
-        "temperature": 32.28,
+        "temperature": 32.24,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 32.28,
+          "temp": 32.24,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -38,6 +39,7 @@
     },
     {
       "city": "Jerusalem",
+      "city_hebrew": "ירושלים",
       "current": {
         "temperature": 31.51,
         "description": "clear sky",
@@ -73,6 +75,7 @@
     },
     {
       "city": "Haifa",
+      "city_hebrew": "חיפה",
       "current": {
         "temperature": 31.52,
         "description": "few clouds",
@@ -108,6 +111,7 @@
     },
     {
       "city": "Eilat",
+      "city_hebrew": "אילת",
       "current": {
         "temperature": 39.91,
         "description": "clear sky",
@@ -143,6 +147,7 @@
     },
     {
       "city": "Beer Sheva",
+      "city_hebrew": "באר שבע",
       "current": {
         "temperature": 34.32,
         "description": "clear sky",
@@ -178,6 +183,7 @@
     },
     {
       "city": "Netanya",
+      "city_hebrew": "נתניה",
       "current": {
         "temperature": 32.25,
         "description": "clear sky",
@@ -213,14 +219,15 @@
     },
     {
       "city": "Ashdod",
+      "city_hebrew": "אשדוד",
       "current": {
-        "temperature": 34.01,
+        "temperature": 33.45,
         "description": "clear sky",
         "icon": "01d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 34.01,
+          "temp": 33.45,
           "description": "clear sky",
           "icon": "01d"
         },
@@ -248,14 +255,15 @@
     },
     {
       "city": "Rishon LeZion",
+      "city_hebrew": "ראשון לציון",
       "current": {
-        "temperature": 32.25,
+        "temperature": 32.58,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 32.91,
+          "temp": 32.58,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -283,6 +291,7 @@
     },
     {
       "city": "Petah Tikva",
+      "city_hebrew": "פתח תקווה",
       "current": {
         "temperature": 32.02,
         "description": "few clouds",
@@ -318,14 +327,15 @@
     },
     {
       "city": "Holon",
+      "city_hebrew": "חולון",
       "current": {
-        "temperature": 32.99,
+        "temperature": 32.71,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 32.99,
+          "temp": 32.71,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -353,14 +363,15 @@
     },
     {
       "city": "Rehovot",
+      "city_hebrew": "רחובות",
       "current": {
-        "temperature": 33.68,
+        "temperature": 33.12,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 33.68,
+          "temp": 33.12,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -388,6 +399,7 @@
     },
     {
       "city": "Herzliya",
+      "city_hebrew": "הרצליה",
       "current": {
         "temperature": 31.99,
         "description": "few clouds",
@@ -423,6 +435,7 @@
     },
     {
       "city": "Kfar Saba",
+      "city_hebrew": "כפר סבא",
       "current": {
         "temperature": 32.13,
         "description": "few clouds",
@@ -458,14 +471,15 @@
     },
     {
       "city": "Bat Yam",
+      "city_hebrew": "בת ים",
       "current": {
-        "temperature": 33.01,
+        "temperature": 32.72,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 33.01,
+          "temp": 32.72,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -493,6 +507,7 @@
     },
     {
       "city": "Ashkelon",
+      "city_hebrew": "אשקלון",
       "current": {
         "temperature": 29.93,
         "description": "clear sky",
@@ -528,6 +543,7 @@
     },
     {
       "city": "Tiberias",
+      "city_hebrew": "טבריה",
       "current": {
         "temperature": 34.14,
         "description": "clear sky",
@@ -563,6 +579,7 @@
     },
     {
       "city": "Nazareth",
+      "city_hebrew": "נצרת",
       "current": {
         "temperature": 30.08,
         "description": "clear sky",
@@ -598,6 +615,7 @@
     },
     {
       "city": "Acre",
+      "city_hebrew": "עכו",
       "current": {
         "temperature": 31.45,
         "description": "few clouds",
@@ -633,6 +651,7 @@
     },
     {
       "city": "Nahariya",
+      "city_hebrew": "נהריה",
       "current": {
         "temperature": 31.55,
         "description": "clear sky",
@@ -668,14 +687,15 @@
     },
     {
       "city": "Lod",
+      "city_hebrew": "לוד",
       "current": {
-        "temperature": 32.52,
+        "temperature": 32.3,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 32.52,
+          "temp": 32.3,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -703,14 +723,15 @@
     },
     {
       "city": "Modiin",
+      "city_hebrew": "מודיעין",
       "current": {
-        "temperature": 31.25,
+        "temperature": 31.08,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 31.25,
+          "temp": 31.08,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -738,14 +759,15 @@
     },
     {
       "city": "Ramat Gan",
+      "city_hebrew": "רמת גן",
       "current": {
-        "temperature": 31.9,
+        "temperature": 31.92,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 31.94,
+          "temp": 31.92,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -773,14 +795,15 @@
     },
     {
       "city": "Givatayim",
+      "city_hebrew": "גבעתיים",
       "current": {
-        "temperature": 32.09,
+        "temperature": 32.03,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 32.09,
+          "temp": 32.03,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -808,14 +831,15 @@
     },
     {
       "city": "Ramla",
+      "city_hebrew": "רמלה",
       "current": {
-        "temperature": 32.76,
+        "temperature": 32.43,
         "description": "few clouds",
         "icon": "02d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 32.76,
+          "temp": 32.43,
           "description": "few clouds",
           "icon": "02d"
         },
@@ -843,6 +867,7 @@
     },
     {
       "city": "Afula",
+      "city_hebrew": "עפולה",
       "current": {
         "temperature": 33.91,
         "description": "clear sky",
@@ -878,6 +903,7 @@
     },
     {
       "city": "Dimona",
+      "city_hebrew": "דימונה",
       "current": {
         "temperature": 34.02,
         "description": "clear sky",
@@ -913,6 +939,7 @@
     },
     {
       "city": "Kiryat Gat",
+      "city_hebrew": "קרית גת",
       "current": {
         "temperature": 32.94,
         "description": "clear sky",
@@ -948,6 +975,7 @@
     },
     {
       "city": "Kiryat Shmona",
+      "city_hebrew": "קרית שמונה",
       "current": {
         "temperature": 31.52,
         "description": "clear sky",
@@ -983,6 +1011,7 @@
     },
     {
       "city": "Sderot",
+      "city_hebrew": "שדרות",
       "current": {
         "temperature": 32.05,
         "description": "clear sky",
@@ -1018,6 +1047,7 @@
     },
     {
       "city": "Arad",
+      "city_hebrew": "ערד",
       "current": {
         "temperature": 33.86,
         "description": "clear sky",
@@ -1053,6 +1083,7 @@
     },
     {
       "city": "Safed",
+      "city_hebrew": "צפת",
       "current": {
         "temperature": 28.5,
         "description": "clear sky",
@@ -1088,14 +1119,15 @@
     },
     {
       "city": "Yavne",
+      "city_hebrew": "יבנה",
       "current": {
-        "temperature": 33.92,
+        "temperature": 33.36,
         "description": "clear sky",
         "icon": "01d"
       },
       "forecast": {
         "2024-08-20": {
-          "temp": 33.92,
+          "temp": 33.36,
           "description": "clear sky",
           "icon": "01d"
         },
