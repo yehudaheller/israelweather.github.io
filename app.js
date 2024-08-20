@@ -1,4 +1,42 @@
+const cityMap = {
+    'תל אביב': 'Tel Aviv',
+    'ירושלים': 'Jerusalem',
+    'חיפה': 'Haifa',
+    'אילת': 'Eilat',
+    'באר שבע': 'Beer Sheva',
+    'נתניה': 'Netanya',
+    'אשדוד': 'Ashdod',
+    'ראשון לציון': 'Rishon LeZion',
+    'פתח תקווה': 'Petah Tikva',
+    'חולון': 'Holon',
+    'רחובות': 'Rehovot',
+    'הרצליה': 'Herzliya',
+    'כפר סבא': 'Kfar Saba',
+    'רעננה': 'Ra\'anana',
+    'בת ים': 'Bat Yam',
+    'אשקלון': 'Ashkelon',
+    'טבריה': 'Tiberias',
+    'נצרת': 'Nazareth',
+    'עכו': 'Acre',
+    'נהריה': 'Nahariya',
+    'לוד': 'Lod',
+    'מודיעין': 'Modiin',
+    'רמת גן': 'Ramat Gan',
+    'גבעתיים': 'Givatayim',
+    'רמלה': 'Ramla',
+    'עפולה': 'Afula',
+    'דימונה': 'Dimona',
+    'קרית גת': 'Kiryat Gat',
+    'קרית שמונה': 'Kiryat Shmona',
+    'שדרות': 'Sderot',
+    'ערד': 'Arad',
+    'צפת': 'Safed',
+    'יבנה': 'Yavne',
+    'בית שמש': 'Beit Shemesh'
+};
+
 // יצירת אובייקט גלובלי לאפליקציה
+
 const weatherApp = {};
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -89,34 +127,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     weatherApp.fetchWeatherData = async function(city) {
-        showLoading();
+    showLoading();
 
-        const cityMap = {
-            'תל אביב': 'Tel Aviv',
-            'ירושלים': 'Jerusalem',
-            'חיפה': 'Haifa',
-            'אילת': 'Eilat',
-            'חולון': 'Holon',
-            'באר שבע': 'beer sheva'
-        };
+    const cityEnglish = cityMap[city] || city;
 
-        const cityEnglish = cityMap[city] || city;
+    try {
+        // Try to get data from the local JSON file
+        const response = await fetch('weather_data.json');
+        const data = await response.json();
+        const cityData = data.cities.find(c => c.city.toLowerCase() === cityEnglish.toLowerCase());
 
-        try {
-            // Try to get data from the local JSON file
-            const response = await fetch('weather_data.json');
-            const data = await response.json();
-            const cityData = data.cities.find(c => c.city.toLowerCase() === cityEnglish.toLowerCase());
-
-            if (cityData) {
-                clearWeatherInfo();
-                console.log(`Data for ${city} was retrieved from the local JSON file.`);
-                displayWeatherData(cityData, city);
-                return;
-            }
-        } catch (error) {
-            console.error("Error fetching local data:", error);
+        if (cityData) {
+            clearWeatherInfo();
+            console.log(`Data for ${city} was retrieved from the local JSON file.`);
+            displayWeatherData(cityData, city);
+            return;
         }
+    } catch (error) {
+        console.error("Error fetching local data:", error);
+    }
 
         // If not found in the local JSON, make a direct API call
         const apiKey = '2480e87306578aee0e2b4063641d2414'
