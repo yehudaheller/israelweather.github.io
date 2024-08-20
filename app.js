@@ -35,23 +35,29 @@ const cityMap = {
     'בית שמש': 'Beit Shemesh'
 };
 
+// יצירת אובייקט גלובלי לאפליקציה
 
 const weatherApp = {};
 
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = "OPENWEATHERMAP_API_KEY";  // This will be replaced when app.js is modified
 
-    // Dark mode toggle functionality
+
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
+    // Check for saved dark mode preference
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
     }
 
+    // Dark mode toggle functionality
     darkModeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
-        localStorage.setItem('darkMode', body.classList.contains('dark-mode') ? 'enabled' : null);
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', null);
+        }
     });
 
     let debounceTimer;
@@ -119,48 +125,48 @@ document.addEventListener('DOMContentLoaded', () => {
             displayError('אנא הזן שם עיר חוקי.');
         }
     }
-
     weatherApp.fetchWeatherData = async function(city) {
-        showLoading();
+    showLoading();
 
-        const cityEnglish = cityMap[city] || city;
+    const cityEnglish = cityMap[city] || city;
 
-        try {
-            // Try to get data from the local JSON file
-            const response = await fetch('weather_data.json');
-            const data = await response.json();
-            const cityData = data.cities.find(c =>
-                c.city.toLowerCase() === cityEnglish.toLowerCase() ||
-                c.city.toLowerCase() === city.toLowerCase()
-            );
+    try {
+        // Try to get data from the local JSON file
+        const response = await fetch('weather_data.json');
+        const data = await response.json();
+        const cityData = data.cities.find(c =>
+            c.city.toLowerCase() === cityEnglish.toLowerCase() ||
+            c.city.toLowerCase() === city.toLowerCase()
+        );
 
-            if (cityData) {
-                clearWeatherInfo();
-                console.log(`Data for ${city} was retrieved from the local JSON file.`);
-                displayWeatherData(cityData, city);
-                return;
-            }
-        } catch (error) {
-            console.error("Error fetching local data:", error);
-        }
-
-        // If not found in the local JSON, make a direct API call
-        const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityEnglish},IL&appid=${apiKey}&units=metric`;
-
-        try {
-            const response = await fetch(apiUrl);
-            if (!response.ok) {
-                throw new Error(`City ${city} not found.`);
-            }
-            const data = await response.json();
+        if (cityData) {
             clearWeatherInfo();
-            console.log(`Data for ${city} was retrieved from the OpenWeatherMap API.`);
-            displayWeatherData(data, city);
-        } catch (error) {
-            console.error(`Error fetching weather data: ${error.message}`);
-            displayError('לא ניתן לקבל את נתוני מזג האוויר. אנא נסה שוב.');
+            console.log(`Data for ${city} was retrieved from the local JSON file.`);
+            displayWeatherData(cityData, city);
+            return;
         }
-    };
+    } catch (error) {
+        console.error("Error fetching local data:", error);
+    }
+
+    // If not found in the local JSON, make a direct API call
+    const apiKey = '2480e87306578aee0e2b4063641d2414'
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityEnglish},IL&appid=${apiKey}&units=metric`;
+
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error(`City ${city} not found.`);
+        }
+        const data = await response.json();
+        clearWeatherInfo();
+        console.log(`Data for ${city} was retrieved from the OpenWeatherMap API.`);
+        displayWeatherData(data, city);
+    } catch (error) {
+        console.error(`Error fetching weather data: ${error.message}`);
+        displayError('לא ניתן לקבל את נתוני מזג האוויר. אנא נסה שוב.');
+    }
+};
 
     function displayWeatherData(data, city) {
         const weatherInfo = document.getElementById('weather-info');
