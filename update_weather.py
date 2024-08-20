@@ -13,6 +13,43 @@ CITIES = [
     'Kiryat Shmona', 'Sderot', 'Arad', 'Safed', 'Yavne', 'Beit Shemesh'
 ]
 
+CITY_MAP = {
+    'Tel Aviv': 'תל אביב',
+    'Jerusalem': 'ירושלים',
+    'Haifa': 'חיפה',
+    'Eilat': 'אילת',
+    'Beer Sheva': 'באר שבע',
+    'Netanya': 'נתניה',
+    'Ashdod': 'אשדוד',
+    'Rishon LeZion': 'ראשון לציון',
+    'Petah Tikva': 'פתח תקווה',
+    'Holon': 'חולון',
+    'Rehovot': 'רחובות',
+    'Herzliya': 'הרצליה',
+    'Kfar Saba': 'כפר סבא',
+    'Ra\'anana': 'רעננה',
+    'Bat Yam': 'בת ים',
+    'Ashkelon': 'אשקלון',
+    'Tiberias': 'טבריה',
+    'Nazareth': 'נצרת',
+    'Acre': 'עכו',
+    'Nahariya': 'נהריה',
+    'Lod': 'לוד',
+    'Modiin': 'מודיעין',
+    'Ramat Gan': 'רמת גן',
+    'Givatayim': 'גבעתיים',
+    'Ramla': 'רמלה',
+    'Afula': 'עפולה',
+    'Dimona': 'דימונה',
+    'Kiryat Gat': 'קרית גת',
+    'Kiryat Shmona': 'קרית שמונה',
+    'Sderot': 'שדרות',
+    'Arad': 'ערד',
+    'Safed': 'צפת',
+    'Yavne': 'יבנה',
+    'Beit Shemesh': 'בית שמש'
+}
+
 
 def get_weather(city):
     current_url = f"http://api.openweathermap.org/data/2.5/weather?q={city},IL&appid={API_KEY}&units=metric"
@@ -43,6 +80,7 @@ def get_weather(city):
 
     return {
         'city': city,
+        'city_hebrew': CITY_MAP.get(city, city),  # Add Hebrew name
         'current': {
             'temperature': current_data['main']['temp'],
             'description': current_data['weather'][0]['description'],
@@ -57,7 +95,7 @@ def update_weather_data():
     for city in CITIES:
         try:
             city_weather = get_weather(city)
-            weather_data.append(city_weather)  # Fixed: city_weather instead of city_weight
+            weather_data.append(city_weather)
             print(f"Successfully fetched data for {city}")
         except Exception as e:
             print(f"Error fetching data for {city}: {e}")
