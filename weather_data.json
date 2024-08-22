@@ -1,37 +1,37 @@
 {
-  "last_updated": "2024-08-21T01:08:32.716957",
+  "last_updated": "2024-08-22T01:10:13.924517",
   "cities": [
     {
       "city": "Tel Aviv",
       "city_hebrew": "תל אביב",
       "current": {
-        "temperature": 25.05,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 26.06,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 25,
+        "2024-08-22": {
+          "temp": 26.16,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.99,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 26.46,
+          "temp": 26.59,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.53,
+          "temp": 26.5,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.93,
+          "temp": 26.13,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.72,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -41,33 +41,33 @@
       "city": "Jerusalem",
       "city_hebrew": "ירושלים",
       "current": {
-        "temperature": 19.28,
+        "temperature": 21.51,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 19.58,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 21.74,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 21.64,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
           "temp": 21.29,
           "description": "clear sky",
           "icon": "01n"
         },
+        "2024-08-23": {
+          "temp": 21.38,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 21.03,
+          "description": "clear sky",
+          "icon": "01n"
+        },
         "2024-08-25": {
-          "temp": 20.93,
+          "temp": 21.12,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 22.96,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -77,33 +77,33 @@
       "city": "Haifa",
       "city_hebrew": "חיפה",
       "current": {
-        "temperature": 25.1,
-        "description": "clear sky",
-        "icon": "01n"
+        "temperature": 27.32,
+        "description": "few clouds",
+        "icon": "02n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 25.07,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 27.33,
+          "temp": 27.41,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 26.46,
+          "temp": 26.52,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.79,
+          "temp": 26.91,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 26.09,
+          "temp": 26.11,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 26.35,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -118,28 +118,28 @@
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 28.84,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 28.01,
+          "temp": 28.79,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 28.88,
+          "temp": 28.78,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 29,
+          "temp": 29.11,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 28.61,
+          "temp": 28.95,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 29.98,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -149,33 +149,33 @@
       "city": "Beer Sheva",
       "city_hebrew": "באר שבע",
       "current": {
-        "temperature": 22.23,
+        "temperature": 23.52,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 22.26,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 23.71,
+          "temp": 23.53,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 23.82,
+          "temp": 23.84,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 23.57,
+          "temp": 23.71,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 22.9,
+          "temp": 23.04,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 23.76,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -185,33 +185,33 @@
       "city": "Netanya",
       "city_hebrew": "נתניה",
       "current": {
-        "temperature": 23.91,
-        "description": "clear sky",
-        "icon": "01n"
+        "temperature": 25.58,
+        "description": "few clouds",
+        "icon": "02n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.11,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 26.61,
-          "description": "clear sky",
-          "icon": "01n"
+          "temp": 26.09,
+          "description": "few clouds",
+          "icon": "02n"
         },
         "2024-08-23": {
-          "temp": 25.95,
+          "temp": 25.97,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 25.95,
+          "temp": 25.99,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.36,
+          "temp": 25.48,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 24.81,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -221,33 +221,33 @@
       "city": "Ashdod",
       "city_hebrew": "אשדוד",
       "current": {
-        "temperature": 24.01,
+        "temperature": 25.12,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.24,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 26.66,
+          "temp": 25.52,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 26.28,
+          "temp": 26.31,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.32,
+          "temp": 26.43,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.74,
+          "temp": 25.83,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.64,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -257,33 +257,33 @@
       "city": "Rishon LeZion",
       "city_hebrew": "ראשון לציון",
       "current": {
-        "temperature": 24.12,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.18,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.06,
+        "2024-08-22": {
+          "temp": 25.24,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.15,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 25.84,
+          "temp": 25.96,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 25.88,
+          "temp": 25.89,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.25,
+          "temp": 25.4,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.04,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -293,33 +293,33 @@
       "city": "Petah Tikva",
       "city_hebrew": "פתח תקווה",
       "current": {
-        "temperature": 24.64,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.83,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.52,
+        "2024-08-22": {
+          "temp": 25.9,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.59,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 26.15,
+          "temp": 26.26,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.08,
+          "temp": 26.11,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.53,
+          "temp": 25.72,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.03,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -329,33 +329,33 @@
       "city": "Holon",
       "city_hebrew": "חולון",
       "current": {
-        "temperature": 24.49,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.54,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.56,
+        "2024-08-22": {
+          "temp": 25.69,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.77,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 26.28,
+          "temp": 26.43,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.4,
+          "temp": 26.34,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.76,
+          "temp": 25.96,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.72,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -365,33 +365,33 @@
       "city": "Rehovot",
       "city_hebrew": "רחובות",
       "current": {
-        "temperature": 23.68,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 24.79,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 23.61,
+        "2024-08-22": {
+          "temp": 24.88,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 25.74,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 25.57,
+          "temp": 25.63,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 25.58,
+          "temp": 25.64,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 24.94,
+          "temp": 25.01,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 24.63,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -401,33 +401,33 @@
       "city": "Herzliya",
       "city_hebrew": "הרצליה",
       "current": {
-        "temperature": 24.29,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.64,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.46,
+        "2024-08-22": {
+          "temp": 26.01,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.9,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 26.32,
+          "temp": 26.38,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.33,
+          "temp": 26.35,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.76,
+          "temp": 25.92,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.28,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -437,275 +437,18 @@
       "city": "Kfar Saba",
       "city_hebrew": "כפר סבא",
       "current": {
-        "temperature": 23.79,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.46,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 23.78,
+        "2024-08-22": {
+          "temp": 25.69,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.1,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 25.6,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
-          "temp": 25.5,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-25": {
-          "temp": 24.95,
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      }
-    },
-    {
-      "city": "Bat Yam",
-      "city_hebrew": "בת ים",
-      "current": {
-        "temperature": 24.48,
-        "description": "broken clouds",
-        "icon": "04n"
-      },
-      "forecast": {
-        "2024-08-21": {
-          "temp": 24.55,
-          "description": "scattered clouds",
-          "icon": "03n"
-        },
-        "2024-08-22": {
-          "temp": 26.77,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 26.28,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
-          "temp": 26.4,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-25": {
-          "temp": 25.76,
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      }
-    },
-    {
-      "city": "Ashkelon",
-      "city_hebrew": "אשקלון",
-      "current": {
-        "temperature": 24.55,
-        "description": "clear sky",
-        "icon": "01n"
-      },
-      "forecast": {
-        "2024-08-21": {
-          "temp": 24.56,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-22": {
-          "temp": 26.13,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 25.84,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
-          "temp": 25.82,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-25": {
-          "temp": 25.21,
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      }
-    },
-    {
-      "city": "Tiberias",
-      "city_hebrew": "טבריה",
-      "current": {
-        "temperature": 26.36,
-        "description": "clear sky",
-        "icon": "01n"
-      },
-      "forecast": {
-        "2024-08-21": {
-          "temp": 25.48,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-22": {
-          "temp": 26.07,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 25.85,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
-          "temp": 25.56,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-25": {
-          "temp": 25.08,
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      }
-    },
-    {
-      "city": "Nazareth",
-      "city_hebrew": "נצרת",
-      "current": {
-        "temperature": 23.14,
-        "description": "clear sky",
-        "icon": "01n"
-      },
-      "forecast": {
-        "2024-08-21": {
-          "temp": 22,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-22": {
-          "temp": 22.08,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 21.62,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
-          "temp": 21.51,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-25": {
-          "temp": 20.93,
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      }
-    },
-    {
-      "city": "Acre",
-      "city_hebrew": "עכו",
-      "current": {
-        "temperature": 25.13,
-        "description": "clear sky",
-        "icon": "01n"
-      },
-      "forecast": {
-        "2024-08-21": {
-          "temp": 24.93,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-22": {
-          "temp": 26.83,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 25.97,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
-          "temp": 26.12,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-25": {
-          "temp": 25.49,
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      }
-    },
-    {
-      "city": "Nahariya",
-      "city_hebrew": "נהריה",
-      "current": {
-        "temperature": 24.99,
-        "description": "clear sky",
-        "icon": "01n"
-      },
-      "forecast": {
-        "2024-08-21": {
-          "temp": 24.68,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-22": {
-          "temp": 26.33,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 25.5,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-24": {
-          "temp": 25.56,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-25": {
-          "temp": 24.95,
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      }
-    },
-    {
-      "city": "Lod",
-      "city_hebrew": "לוד",
-      "current": {
-        "temperature": 24.33,
-        "description": "broken clouds",
-        "icon": "04n"
-      },
-      "forecast": {
-        "2024-08-21": {
-          "temp": 24.04,
-          "description": "scattered clouds",
-          "icon": "03n"
-        },
-        "2024-08-22": {
-          "temp": 25.88,
-          "description": "clear sky",
-          "icon": "01n"
-        },
-        "2024-08-23": {
-          "temp": 25.64,
+          "temp": 25.72,
           "description": "clear sky",
           "icon": "01n"
         },
@@ -715,7 +458,264 @@
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 24.96,
+          "temp": 25.12,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 24.15,
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      }
+    },
+    {
+      "city": "Bat Yam",
+      "city_hebrew": "בת ים",
+      "current": {
+        "temperature": 25.54,
+        "description": "scattered clouds",
+        "icon": "03n"
+      },
+      "forecast": {
+        "2024-08-22": {
+          "temp": 25.69,
+          "description": "scattered clouds",
+          "icon": "03n"
+        },
+        "2024-08-23": {
+          "temp": 26.43,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 26.34,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-25": {
+          "temp": 25.96,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.72,
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      }
+    },
+    {
+      "city": "Ashkelon",
+      "city_hebrew": "אשקלון",
+      "current": {
+        "temperature": 26.19,
+        "description": "clear sky",
+        "icon": "01n"
+      },
+      "forecast": {
+        "2024-08-22": {
+          "temp": 26.24,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-23": {
+          "temp": 25.84,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 25.97,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-25": {
+          "temp": 25.25,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 24.85,
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      }
+    },
+    {
+      "city": "Tiberias",
+      "city_hebrew": "טבריה",
+      "current": {
+        "temperature": 28.03,
+        "description": "clear sky",
+        "icon": "01n"
+      },
+      "forecast": {
+        "2024-08-22": {
+          "temp": 27.23,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-23": {
+          "temp": 25.76,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 25.67,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-25": {
+          "temp": 24.94,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.04,
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      }
+    },
+    {
+      "city": "Nazareth",
+      "city_hebrew": "נצרת",
+      "current": {
+        "temperature": 24.81,
+        "description": "clear sky",
+        "icon": "01n"
+      },
+      "forecast": {
+        "2024-08-22": {
+          "temp": 23.75,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-23": {
+          "temp": 21.76,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 21.71,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-25": {
+          "temp": 20.95,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 20.49,
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      }
+    },
+    {
+      "city": "Acre",
+      "city_hebrew": "עכו",
+      "current": {
+        "temperature": 26.93,
+        "description": "clear sky",
+        "icon": "01n"
+      },
+      "forecast": {
+        "2024-08-22": {
+          "temp": 26.94,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-23": {
+          "temp": 26.05,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 26.34,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-25": {
+          "temp": 25.55,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.84,
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      }
+    },
+    {
+      "city": "Nahariya",
+      "city_hebrew": "נהריה",
+      "current": {
+        "temperature": 26.66,
+        "description": "clear sky",
+        "icon": "01n"
+      },
+      "forecast": {
+        "2024-08-22": {
+          "temp": 26.63,
+          "description": "few clouds",
+          "icon": "02n"
+        },
+        "2024-08-23": {
+          "temp": 25.57,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 25.81,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-25": {
+          "temp": 25.03,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.4,
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      }
+    },
+    {
+      "city": "Lod",
+      "city_hebrew": "לוד",
+      "current": {
+        "temperature": 25.37,
+        "description": "scattered clouds",
+        "icon": "03n"
+      },
+      "forecast": {
+        "2024-08-22": {
+          "temp": 25.28,
+          "description": "scattered clouds",
+          "icon": "03n"
+        },
+        "2024-08-23": {
+          "temp": 25.72,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-24": {
+          "temp": 25.62,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-25": {
+          "temp": 25.09,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 24.55,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -725,33 +725,33 @@
       "city": "Modiin",
       "city_hebrew": "מודיעין",
       "current": {
-        "temperature": 23.33,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 24.37,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 22.89,
+        "2024-08-22": {
+          "temp": 24.2,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 24.57,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 24.41,
+          "temp": 24.34,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 24.07,
+          "temp": 24.21,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 23.59,
+          "temp": 23.68,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 23.42,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -761,33 +761,33 @@
       "city": "Ramat Gan",
       "city_hebrew": "רמת גן",
       "current": {
-        "temperature": 24.83,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.84,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.85,
+        "2024-08-22": {
+          "temp": 26.01,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.99,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 26.46,
+          "temp": 26.59,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.53,
+          "temp": 26.5,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.93,
+          "temp": 26.13,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.72,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -797,33 +797,33 @@
       "city": "Givatayim",
       "city_hebrew": "גבעתיים",
       "current": {
-        "temperature": 24.78,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.79,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.82,
+        "2024-08-22": {
+          "temp": 25.98,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 26.99,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 26.46,
+          "temp": 26.59,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.53,
+          "temp": 26.5,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.93,
+          "temp": 26.13,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.72,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -833,33 +833,33 @@
       "city": "Ramla",
       "city_hebrew": "רמלה",
       "current": {
-        "temperature": 24.01,
-        "description": "broken clouds",
-        "icon": "04n"
+        "temperature": 25.08,
+        "description": "scattered clouds",
+        "icon": "03n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 23.68,
+        "2024-08-22": {
+          "temp": 24.96,
           "description": "scattered clouds",
           "icon": "03n"
         },
-        "2024-08-22": {
-          "temp": 25.47,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-23": {
-          "temp": 25.29,
+          "temp": 25.34,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 25.21,
+          "temp": 25.3,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 24.59,
+          "temp": 24.7,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 24.2,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -869,33 +869,33 @@
       "city": "Afula",
       "city_hebrew": "עפולה",
       "current": {
-        "temperature": 22.42,
+        "temperature": 24.12,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 22.45,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 24.15,
+          "temp": 24.08,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 23.81,
+          "temp": 23.94,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 23.69,
+          "temp": 23.86,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 23.04,
+          "temp": 23.09,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 22.71,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -905,33 +905,33 @@
       "city": "Dimona",
       "city_hebrew": "דימונה",
       "current": {
-        "temperature": 20.64,
+        "temperature": 21.85,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 20.6,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 22.12,
+          "temp": 21.86,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 22.44,
+          "temp": 22.14,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 22.09,
+          "temp": 22.11,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 21.42,
+          "temp": 21.6,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 23.47,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -941,33 +941,33 @@
       "city": "Kiryat Gat",
       "city_hebrew": "קרית גת",
       "current": {
-        "temperature": 22.98,
+        "temperature": 24.52,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 23,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 24.55,
+          "temp": 24.54,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 24.57,
+          "temp": 24.49,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 24.45,
+          "temp": 24.6,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 23.73,
+          "temp": 23.85,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 23.62,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -977,33 +977,33 @@
       "city": "Kiryat Shmona",
       "city_hebrew": "קרית שמונה",
       "current": {
-        "temperature": 21.07,
+        "temperature": 22.28,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 20.9,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 22.79,
+          "temp": 22.25,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 22.01,
+          "temp": 21.76,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 21.13,
+          "temp": 21.39,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 21.19,
+          "temp": 20.96,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 21.54,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -1013,33 +1013,33 @@
       "city": "Sderot",
       "city_hebrew": "שדרות",
       "current": {
-        "temperature": 23.69,
+        "temperature": 25.37,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 23.72,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 25.31,
+          "temp": 25.37,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 25.27,
+          "temp": 25.22,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 25.16,
+          "temp": 25.27,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 24.47,
+          "temp": 24.44,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 23.88,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -1049,33 +1049,33 @@
       "city": "Arad",
       "city_hebrew": "ערד",
       "current": {
-        "temperature": 22.25,
+        "temperature": 23.08,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 22.32,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 23.53,
+          "temp": 23.11,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 23.93,
+          "temp": 23.56,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 23.38,
+          "temp": 23.32,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 22.92,
+          "temp": 23.02,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 24.67,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -1085,33 +1085,33 @@
       "city": "Safed",
       "city_hebrew": "צפת",
       "current": {
-        "temperature": 20.72,
+        "temperature": 22.39,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 20.16,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 21.75,
+          "temp": 21.88,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 21.12,
+          "temp": 20.97,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 20.71,
+          "temp": 20.84,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 20.6,
+          "temp": 20.32,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 20.67,
           "description": "clear sky",
           "icon": "01n"
         }
@@ -1121,33 +1121,33 @@
       "city": "Yavne",
       "city_hebrew": "יבנה",
       "current": {
-        "temperature": 23.92,
+        "temperature": 25.03,
         "description": "clear sky",
         "icon": "01n"
       },
       "forecast": {
-        "2024-08-21": {
-          "temp": 24.07,
-          "description": "clear sky",
-          "icon": "01n"
-        },
         "2024-08-22": {
-          "temp": 26.4,
+          "temp": 25.29,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-23": {
-          "temp": 26.06,
+          "temp": 26.13,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-24": {
-          "temp": 26.15,
+          "temp": 26.17,
           "description": "clear sky",
           "icon": "01n"
         },
         "2024-08-25": {
-          "temp": 25.53,
+          "temp": 25.62,
+          "description": "clear sky",
+          "icon": "01n"
+        },
+        "2024-08-26": {
+          "temp": 25.43,
           "description": "clear sky",
           "icon": "01n"
         }
